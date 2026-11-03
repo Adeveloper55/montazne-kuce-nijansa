@@ -193,6 +193,17 @@ a[href^="mailto:"]:hover {
   box-shadow: 0 14px 34px rgba(0, 0, 0, 0.4);
 }
 
+/* Keep copyright / Audax TIM clear of fixed Pozovi */
+footer.section-dark {
+  padding-bottom: 1.5rem;
+}
+
+footer .subfooter {
+  padding-bottom: 1.25rem;
+  position: relative;
+  z-index: 1;
+}
+
 @media (max-width: 767px) {
   .nk-call-float {
     right: 14px;
@@ -206,6 +217,16 @@ a[href^="mailto:"]:hover {
 
   #back-to-top {
     bottom: 78px !important;
+  }
+
+  /* Full-width float sits over footer — lift content above it */
+  footer.section-dark {
+    padding-bottom: 5.5rem !important;
+  }
+
+  footer .subfooter {
+    padding-bottom: 0.75rem;
+    margin-bottom: 0;
   }
 }
 
