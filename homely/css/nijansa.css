@@ -167,7 +167,7 @@ a[href^="mailto:"]:hover {
   position: fixed;
   right: 18px;
   bottom: 22px;
-  z-index: 999;
+  z-index: 998;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -193,6 +193,13 @@ a[href^="mailto:"]:hover {
   box-shadow: 0 14px 34px rgba(0, 0, 0, 0.4);
 }
 
+/* Keep scroll-up clear of floating Pozovi */
+#back-to-top {
+  right: 24px !important;
+  bottom: 90px !important;
+  z-index: 997 !important;
+}
+
 /* Keep copyright / Audax TIM clear of fixed Pozovi */
 footer.section-dark {
   padding-bottom: 1.5rem;
@@ -216,6 +223,7 @@ footer .subfooter {
   }
 
   #back-to-top {
+    right: 18px !important;
     bottom: 78px !important;
   }
 
