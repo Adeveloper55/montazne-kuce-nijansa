@@ -6,7 +6,7 @@
 
      const enableRtl = 'off'; // on - for enable RTL, off - for deactive RTL
      const preloader = 'off'; // on - for enable preloader, off - for disable preloader
-     const headerAutoshow = "on"; // on - for enable fixed header, off - for disable fixed header
+     const headerAutoshow = "off"; // off — keep sticky header always visible (Nijansa)
      const topbar = "off"; // on - for enable fixed header, off - for disable fixed header
 
     /* predefined vars begin */

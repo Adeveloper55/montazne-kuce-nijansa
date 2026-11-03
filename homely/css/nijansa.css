@@ -15,12 +15,29 @@
   --nk-gold: #c59d5f;
 }
 
+/* Sticky menu — always visible on desktop + mobile */
 header.header-light,
 header.header-light.smaller,
 header.header-light.header-mobile,
-header.header-light.smaller.scroll-light {
+header.header-light.smaller.scroll-light,
+header.header-light.scroll-down,
+header.header-light.nav-up {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin-top: 0 !important;
+  z-index: 1001;
   background: var(--nk-header-bg) !important;
   border-bottom: 1px solid rgba(197, 157, 95, 0.18);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.22);
+}
+
+/* Homely hides header on scroll-down — keep it visible */
+header.header-light.scroll-down {
+  margin-top: 0 !important;
+  transform: none !important;
 }
 
 header.header-light #mainmenu > li > a,
@@ -138,11 +155,23 @@ a[href^="mailto:"]:hover {
   /* Clip closed menu (Homely pattern); expand when open */
   header.header-mobile {
     overflow: hidden !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1001;
   }
 
   header.header-mobile.menu-open {
     overflow-y: auto !important;
     background: var(--nk-header-bg) !important;
+  }
+
+  /* Content clear under fixed mobile header */
+  main > section:first-of-type,
+  main > .jarallax:first-of-type {
+    scroll-margin-top: 70px;
   }
 
   header.header-mobile #mainmenu {
