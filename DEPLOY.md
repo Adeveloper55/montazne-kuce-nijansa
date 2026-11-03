@@ -54,8 +54,11 @@ Sačekaj propagaciju DNS (često 5–30 min).
 
 ```bash
 docker compose up --build -d
-# otvori http://localhost:8080
+# lokalno, privremeno mapiraj port:
+# docker run --rm -p 8080:80 montazne-kuce-nijansa:latest
 ```
+
+**Napomena:** u `docker-compose.yml` nema `ports: 8080:80` — na Dokploy serveru taj port često bude zauzet. Domain u Dokploy-u ide na **Container Port 80**.
 
 ## Napomene
 

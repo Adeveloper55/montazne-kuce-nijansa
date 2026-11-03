@@ -2,7 +2,7 @@ services:
   web:
     build: .
     image: montazne-kuce-nijansa:latest
-    container_name: montazne-kuce-nijansa
-    ports:
-      - "8080:80"
     restart: unless-stopped
+    # Dokploy / Traefik routes to container port 80 — do not bind host 8080
+    expose:
+      - "80"
