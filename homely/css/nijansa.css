@@ -1,5 +1,13 @@
 /* Nijansa catalog — premium cards on Homely theme (additive only) */
 
+#buy-now { display: none !important; }
+
+/* Hide leftover demo mega-menu if any */
+#mainmenu .mega,
+#mainmenu ul.mega {
+  display: none !important;
+}
+
 .nk-cat-card {
   display: block;
   position: relative;
