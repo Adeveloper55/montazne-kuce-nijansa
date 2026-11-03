@@ -1,0 +1,1662 @@
+﻿[
+    {
+        "title":  "Montažna kuća Tip 44b",
+        "model":  "Tip 44b",
+        "broj_soba":  "3",
+        "bruto":  "50.38 m2",
+        "neto":  "45.46 m2",
+        "kategorija":  "50-100m2",
+        "url":  "https://montaznekuce-nijansa.rs/montazna-kuca-tip-44b/",
+        "raspored":  [
+                         {
+                             "br":  "1",
+                             "prostorija":  "Ulaz",
+                             "povrsina":  "2.02 m2"
+                         },
+                         {
+                             "br":  "2",
+                             "prostorija":  "Predsoblje",
+                             "povrsina":  "2.40 m2"
+                         },
+                         {
+                             "br":  "3",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "8.26 m2"
+                         },
+                         {
+                             "br":  "4",
+                             "prostorija":  "Kuhinja",
+                             "povrsina":  "8.70 m2"
+                         },
+                         {
+                             "br":  "5",
+                             "prostorija":  "Dnevna soba",
+                             "povrsina":  "12.60 m2"
+                         },
+                         {
+                             "br":  "6",
+                             "prostorija":  "Kupatilo",
+                             "povrsina":  "4.08 m2"
+                         },
+                         {
+                             "br":  "7",
+                             "prostorija":  "Terasa",
+                             "povrsina":  "7.40 m2"
+                         }
+                     ],
+        "slike":  [
+                      "montazna-kuca-tip-ivanjica-44b.jpg",
+                      "montazna-kuca-tip-ivanjica-44b-2.jpg",
+                      "montazna-kuca-tip-ivanjica-44b-sema.png"
+                  ]
+    },
+    {
+        "title":  "Montažna kuća Tip 52",
+        "model":  "Tip 52",
+        "broj_soba":  "5",
+        "bruto":  "55.50 m2",
+        "neto":  "49.44 m2",
+        "kategorija":  "50-100m2",
+        "url":  "https://montaznekuce-nijansa.rs/montazna-kuca-tip-52/",
+        "raspored":  [
+                         {
+                             "br":  "1",
+                             "prostorija":  "Ulaz",
+                             "povrsina":  "1.83 m2"
+                         },
+                         {
+                             "br":  "2",
+                             "prostorija":  "Predsoblje",
+                             "povrsina":  "3.48 m2"
+                         },
+                         {
+                             "br":  "3",
+                             "prostorija":  "Kupatilo",
+                             "povrsina":  "3.68 m2"
+                         },
+                         {
+                             "br":  "4",
+                             "prostorija":  "Kuhinja",
+                             "povrsina":  "5.51 m2"
+                         },
+                         {
+                             "br":  "5",
+                             "prostorija":  "Dnevna soba",
+                             "povrsina":  "12.96 m2"
+                         },
+                         {
+                             "br":  "6",
+                             "prostorija":  "Ostava",
+                             "povrsina":  "1.32 m2"
+                         },
+                         {
+                             "br":  "7",
+                             "prostorija":  "Dečija soba",
+                             "povrsina":  "5.52 m2"
+                         },
+                         {
+                             "br":  "8",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "10.15 m2"
+                         },
+                         {
+                             "br":  "9",
+                             "prostorija":  "Terasa",
+                             "povrsina":  "4.99 m2"
+                         }
+                     ],
+        "slike":  [
+                      "montazna-kuca-tip-ivanjica-52.jpg",
+                      "montazna-kuca-tip-ivanjica-52-2.jpg",
+                      "montazna-kuca-tip-ivanjica-52-sema.png"
+                  ]
+    },
+    {
+        "title":  "Montažna kuća Tip 59",
+        "model":  "Tip 59",
+        "broj_soba":  "5",
+        "bruto":  "64.05 m2",
+        "neto":  "57.53 m2",
+        "kategorija":  "50-100m2",
+        "url":  "https://montaznekuce-nijansa.rs/montazna-kuca-tip-59/",
+        "raspored":  [
+                         {
+                             "br":  "1",
+                             "prostorija":  "Ulaz",
+                             "povrsina":  "1.91 m2"
+                         },
+                         {
+                             "br":  "2",
+                             "prostorija":  "Predsoblje",
+                             "povrsina":  "4.20 m2"
+                         },
+                         {
+                             "br":  "3",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "10.15 m2"
+                         },
+                         {
+                             "br":  "4",
+                             "prostorija":  "Dečija soba",
+                             "povrsina":  "5.29 m2"
+                         },
+                         {
+                             "br":  "5",
+                             "prostorija":  "Kupatilo",
+                             "povrsina":  "3.91 m2"
+                         },
+                         {
+                             "br":  "6",
+                             "prostorija":  "Kuhinja",
+                             "povrsina":  "3.12 m2"
+                         },
+                         {
+                             "br":  "7",
+                             "prostorija":  "Ostava",
+                             "povrsina":  "1.65 m2"
+                         },
+                         {
+                             "br":  "8",
+                             "prostorija":  "Dnevna soba",
+                             "povrsina":  "14.82 m2"
+                         },
+                         {
+                             "br":  "9",
+                             "prostorija":  "Terasa",
+                             "povrsina":  "6.87 m2"
+                         }
+                     ],
+        "slike":  [
+                      "montazna-kuca-tip-ivanjica-59.jpg",
+                      "montazna-kuca-tip-ivanjica-59-2.jpg",
+                      "montazna-kuca-tip-ivanjica-59-sema.png"
+                  ]
+    },
+    {
+        "title":  "Montažna kuća Tip 57",
+        "model":  "Tip 57",
+        "broj_soba":  "3",
+        "bruto":  "65.47 m2",
+        "neto":  "57.30 m2",
+        "kategorija":  "50-100m2",
+        "url":  "https://montaznekuce-nijansa.rs/montazna-kuca-tip-57/",
+        "raspored":  [
+                         {
+                             "br":  "1",
+                             "prostorija":  "Trem",
+                             "povrsina":  "9.94 m2"
+                         },
+                         {
+                             "br":  "2",
+                             "prostorija":  "Hodnik",
+                             "povrsina":  "3.19 m2"
+                         },
+                         {
+                             "br":  "3",
+                             "prostorija":  "Dnevna soba",
+                             "povrsina":  "16.25 m2"
+                         },
+                         {
+                             "br":  "4",
+                             "prostorija":  "Kuhinja",
+                             "povrsina":  "4.75 m2"
+                         },
+                         {
+                             "br":  "5",
+                             "prostorija":  "Kupatilo",
+                             "povrsina":  "3.99 m2"
+                         },
+                         {
+                             "br":  "6",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "10.47 m2"
+                         },
+                         {
+                             "br":  "7",
+                             "prostorija":  "Dečija soba",
+                             "povrsina":  "6.93 m2"
+                         },
+                         {
+                             "br":  "8",
+                             "prostorija":  "Ostava",
+                             "povrsina":  "1.78 m2"
+                         }
+                     ],
+        "slike":  [
+                      "montazna-kuca-tip-ivanjica-57.jpg",
+                      "montazna-kuca-tip-ivanjica-57-2.jpg",
+                      "montazna-kuca-tip-ivanjica-57-sema.jpg"
+                  ]
+    },
+    {
+        "title":  "Montažna kuća Tip 66",
+        "model":  "Tip 66",
+        "broj_soba":  "5",
+        "bruto":  "70.56 m2",
+        "neto":  "62.02 m2",
+        "kategorija":  "50-100m2",
+        "url":  "https://montaznekuce-nijansa.rs/montazna-kuca-tip-66/",
+        "raspored":  [
+                         {
+                             "br":  "1",
+                             "prostorija":  "Terasa",
+                             "povrsina":  "7.62 m2"
+                         },
+                         {
+                             "br":  "2",
+                             "prostorija":  "Predsoblje",
+                             "povrsina":  "5.95 m2"
+                         },
+                         {
+                             "br":  "3",
+                             "prostorija":  "Dnevna soba",
+                             "povrsina":  "17.28 m2"
+                         },
+                         {
+                             "br":  "4",
+                             "prostorija":  "Ostava",
+                             "povrsina":  "2.53 m2"
+                         },
+                         {
+                             "br":  "5",
+                             "prostorija":  "Kuhinja",
+                             "povrsina":  "8.34 m2"
+                         },
+                         {
+                             "br":  "6",
+                             "prostorija":  "Kupatilo",
+                             "povrsina":  "4.08 m2"
+                         },
+                         {
+                             "br":  "7",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "15.72 m2"
+                         },
+                         {
+                             "br":  "8",
+                             "prostorija":  "Dečija soba",
+                             "povrsina":  "10.15 m2"
+                         }
+                     ],
+        "slike":  [
+                      "montazna-kuca-tip-ivanjica-66-1.jpg",
+                      "montazna-kuca-tip-ivanjica-66-2.jpg",
+                      "montazna-kuca-tip-ivanjica-66-sema.jpg"
+                  ]
+    },
+    {
+        "title":  "Montažna kuća Tip 68",
+        "model":  "Tip 68",
+        "broj_soba":  "4",
+        "bruto":  "75.26 m2",
+        "neto":  "68.32 m2",
+        "kategorija":  "50-100m2",
+        "url":  "https://montaznekuce-nijansa.rs/montazna-kuca-tip-68/",
+        "raspored":  [
+                         {
+                             "br":  "1",
+                             "prostorija":  "Ulaz",
+                             "povrsina":  "3.95 m2"
+                         },
+                         {
+                             "br":  "2",
+                             "prostorija":  "Vetrobran",
+                             "povrsina":  "3.06 m2"
+                         },
+                         {
+                             "br":  "3",
+                             "prostorija":  "Predsoblje",
+                             "povrsina":  "3.85 m2"
+                         },
+                         {
+                             "br":  "4",
+                             "prostorija":  "Dnevna soba",
+                             "povrsina":  "19.32 m2"
+                         },
+                         {
+                             "br":  "5",
+                             "prostorija":  "Kuhinja",
+                             "povrsina":  "8.40 m2"
+                         },
+                         {
+                             "br":  "6",
+                             "prostorija":  "Kupatilo",
+                             "povrsina":  "4.08 m2"
+                         },
+                         {
+                             "br":  "7",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "10.50 m2"
+                         },
+                         {
+                             "br":  "8",
+                             "prostorija":  "Dečija soba",
+                             "povrsina":  "9.00 m2"
+                         },
+                         {
+                             "br":  "9",
+                             "prostorija":  "Terasa",
+                             "povrsina":  "6.16 m2"
+                         }
+                     ],
+        "slike":  [
+                      "montazna-kuca-tip-ivanjica-68.jpg",
+                      "montazna-kuca-tip-ivanjica-68-2.jpg",
+                      "montazna-kuca-tip-ivanjica-68-sema.png"
+                  ]
+    },
+    {
+        "title":  "Montažna kuća Tip 77",
+        "model":  "Tip 77",
+        "broj_soba":  "5",
+        "bruto":  "82.31 m2",
+        "neto":  "74.64 m2",
+        "kategorija":  "50-100m2",
+        "url":  "https://montaznekuce-nijansa.rs/montazna-kuca-tip-77/",
+        "raspored":  [
+                         {
+                             "br":  "1",
+                             "prostorija":  "Ulaz",
+                             "povrsina":  "8.29 m2"
+                         },
+                         {
+                             "br":  "2",
+                             "prostorija":  "Vetrobran",
+                             "povrsina":  "5.10 m2"
+                         },
+                         {
+                             "br":  "3",
+                             "prostorija":  "Degažman",
+                             "povrsina":  "2.88 m2"
+                         },
+                         {
+                             "br":  "4",
+                             "prostorija":  "Dečija soba",
+                             "povrsina":  "8.28 m2"
+                         },
+                         {
+                             "br":  "5",
+                             "prostorija":  "Dečija soba",
+                             "povrsina":  "5.52 m2"
+                         },
+                         {
+                             "br":  "6",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "11.30 m2"
+                         },
+                         {
+                             "br":  "7",
+                             "prostorija":  "Kupatilo",
+                             "povrsina":  "4.08 m2"
+                         },
+                         {
+                             "br":  "8",
+                             "prostorija":  "Kuhinja",
+                             "povrsina":  "4.08 m2"
+                         },
+                         {
+                             "br":  "9",
+                             "prostorija":  "Dnevna soba",
+                             "povrsina":  "22.09 m2"
+                         }
+                     ],
+        "slike":  [
+                      "montazna-kuca-tip-ivanjica-77.jpg",
+                      "montazna-kuca-tip-ivanjica-77-2.jpg",
+                      "montazna-kuca-tip-ivanjica-77-sema.png"
+                  ]
+    },
+    {
+        "title":  "Montažna kuća Tip 81",
+        "model":  "Tip 81",
+        "broj_soba":  "6",
+        "bruto":  "90.61 m2",
+        "neto":  "81.88 m2",
+        "kategorija":  "50-100m2",
+        "url":  "https://montaznekuce-nijansa.rs/montazna-kuca-tip-81/",
+        "raspored":  [
+                         {
+                             "br":  "1",
+                             "prostorija":  "Terasa",
+                             "povrsina":  "7.64 m2"
+                         },
+                         {
+                             "br":  "2",
+                             "prostorija":  "Vetrobran",
+                             "povrsina":  "3.06 m2"
+                         },
+                         {
+                             "br":  "3",
+                             "prostorija":  "Predsoblje",
+                             "povrsina":  "5.44 m2"
+                         },
+                         {
+                             "br":  "4",
+                             "prostorija":  "Kuhinja",
+                             "povrsina":  "8.28 m2"
+                         },
+                         {
+                             "br":  "5",
+                             "prostorija":  "Ostava",
+                             "povrsina":  "2.18 m2"
+                         },
+                         {
+                             "br":  "6",
+                             "prostorija":  "Radna soba",
+                             "povrsina":  "5.52 m2"
+                         },
+                         {
+                             "br":  "7",
+                             "prostorija":  "Dnevna soba",
+                             "povrsina":  "19.26 m2"
+                         },
+                         {
+                             "br":  "8",
+                             "prostorija":  "Kupatilo",
+                             "povrsina":  "4.10 m2"
+                         },
+                         {
+                             "br":  "9",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "12.30 m2"
+                         },
+                         {
+                             "br":  "9",
+                             "prostorija":  "Dečija soba",
+                             "povrsina":  "14.10 m2"
+                         }
+                     ],
+        "slike":  [
+                      "montazna-kuca-tip-ivanjica-81.jpg",
+                      "montazna-kuca-tip-ivanjica-81-2.jpg",
+                      "montazna-kuca-tip-ivanjica-81-sema.jpg"
+                  ]
+    },
+    {
+        "title":  "Montažna kuća Tip 86",
+        "model":  "Tip 86",
+        "broj_soba":  "6",
+        "bruto":  "96.65 m2",
+        "neto":  "87.7 m2",
+        "kategorija":  "50-100m2",
+        "url":  "https://montaznekuce-nijansa.rs/montazna-kuca-tip-86/",
+        "raspored":  [
+                         {
+                             "br":  "1",
+                             "prostorija":  "Terasa",
+                             "povrsina":  "12.57 m2"
+                         },
+                         {
+                             "br":  "2",
+                             "prostorija":  "Vetrobran",
+                             "povrsina":  "2.89 m2"
+                         },
+                         {
+                             "br":  "3",
+                             "prostorija":  "Predsoblje",
+                             "povrsina":  "5.95 m2"
+                         },
+                         {
+                             "br":  "6",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "12.28 m2"
+                         },
+                         {
+                             "br":  "7",
+                             "prostorija":  "Dečija soba",
+                             "povrsina":  "10.08 m2"
+                         },
+                         {
+                             "br":  "8",
+                             "prostorija":  "Kupatilo",
+                             "povrsina":  "4.08 m2"
+                         },
+                         {
+                             "br":  "9",
+                             "prostorija":  "Ostava",
+                             "povrsina":  "1.32m2"
+                         },
+                         {
+                             "br":  "10",
+                             "prostorija":  "Kuhinja",
+                             "povrsina":  "6.96 m2"
+                         },
+                         {
+                             "br":  "11",
+                             "prostorija":  "Trpezarija",
+                             "povrsina":  "12.32 m2"
+                         },
+                         {
+                             "br":  "12",
+                             "prostorija":  "Dnevna soba",
+                             "povrsina":  "14.71 m2"
+                         },
+                         {
+                             "br":  "13",
+                             "prostorija":  "Balkon",
+                             "povrsina":  "4.64 m2"
+                         }
+                     ],
+        "slike":  [
+                      "montazna-kuca-tip-ivanjica-86-1.jpg",
+                      "montazna-kuca-tip-ivanjica-86-2.jpg",
+                      "montazna-kuca-tip-ivanjica-86-sema.png"
+                  ]
+    },
+    {
+        "title":  "Montažna kuća Tip 27",
+        "model":  "Tip 27",
+        "broj_soba":  "2",
+        "bruto":  "31.03 m2",
+        "neto":  "26.59 m2",
+        "kategorija":  "do-50m2",
+        "url":  "https://montaznekuce-nijansa.rs/montazna-kuca-tip-27/",
+        "raspored":  [
+                         {
+                             "br":  "0",
+                             "prostorija":  "Ulaz",
+                             "povrsina":  "1.57 m2"
+                         },
+                         {
+                             "br":  "1",
+                             "prostorija":  "Predsoblje",
+                             "povrsina":  "1.80 m2"
+                         },
+                         {
+                             "br":  "2",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "4.32 m2"
+                         },
+                         {
+                             "br":  "3",
+                             "prostorija":  "Kupatilo",
+                             "povrsina":  "3.12 m2"
+                         },
+                         {
+                             "br":  "4",
+                             "prostorija":  "Dnevna soba",
+                             "povrsina":  "12.78 m2"
+                         },
+                         {
+                             "br":  "5",
+                             "prostorija":  "Terasa",
+                             "povrsina":  "3 m2"
+                         }
+                     ],
+        "slike":  [
+                      "montazna-kuca-tip-ivanjica-27.jpg",
+                      "montazna-kuca-tip-ivanjica-27-2.jpg",
+                      "montazna-kuca-tip-ivanjica-27-sema.jpg"
+                  ]
+    },
+    {
+        "title":  "Montažna kuća Tip 30",
+        "model":  "Tip 30",
+        "broj_soba":  "3",
+        "bruto":  "34.93 m2",
+        "neto":  "30.91 m2",
+        "kategorija":  "do-50m2",
+        "url":  "https://montaznekuce-nijansa.rs/montazna-kuca-tip-30/",
+        "raspored":  [
+                         {
+                             "br":  "1",
+                             "prostorija":  "Ulaz",
+                             "povrsina":  "1.57 m2"
+                         },
+                         {
+                             "br":  "2",
+                             "prostorija":  "Predsoblje",
+                             "povrsina":  "2.16 m2"
+                         },
+                         {
+                             "br":  "3",
+                             "prostorija":  "Kupatilo",
+                             "povrsina":  "2.64 m2"
+                         },
+                         {
+                             "br":  "4",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "5.22 m2"
+                         },
+                         {
+                             "br":  "5",
+                             "prostorija":  "Kuhinja",
+                             "povrsina":  "2.76 m2"
+                         },
+                         {
+                             "br":  "6",
+                             "prostorija":  "Dnevna soba",
+                             "povrsina":  "12.04 m2"
+                         },
+                         {
+                             "br":  "7",
+                             "prostorija":  "Terasa",
+                             "povrsina":  "4.52 m2"
+                         }
+                     ],
+        "slike":  [
+                      "montazna-kuca-tip-ivanjica-30.jpg",
+                      "montazna-kuca-tip-ivanjica-30-2.jpg",
+                      "montazna-kuca-tip-ivanjica-30-sema.png"
+                  ]
+    },
+    {
+        "title":  "Montažna kuća Tip 35",
+        "model":  "Tip 35",
+        "broj_soba":  "3",
+        "bruto":  "39.74 m2",
+        "neto":  "32.59 m2",
+        "kategorija":  "do-50m2",
+        "url":  "https://montaznekuce-nijansa.rs/montazna-kuca-tip-35/",
+        "raspored":  [
+                         {
+                             "br":  "1",
+                             "prostorija":  "Ulaz",
+                             "povrsina":  "3.42 m2"
+                         },
+                         {
+                             "br":  "2",
+                             "prostorija":  "Predsoblje",
+                             "povrsina":  "2.76 m2"
+                         },
+                         {
+                             "br":  "3",
+                             "prostorija":  "Kupatilo",
+                             "povrsina":  "2.76 m2"
+                         },
+                         {
+                             "br":  "4",
+                             "prostorija":  "Dnevna soba",
+                             "povrsina":  "8.64 m2"
+                         },
+                         {
+                             "br":  "5",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "5.41 m2"
+                         },
+                         {
+                             "br":  "6",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "5.41 m2"
+                         },
+                         {
+                             "br":  "7",
+                             "prostorija":  "Terasa",
+                             "povrsina":  "4.19 m2"
+                         }
+                     ],
+        "slike":  [
+                      "montazna-kuca-tip-ivanjica-35.jpg",
+                      "montazna-kuca-tip-ivanjica-35-2.jpg",
+                      "montazna-kuca-tip-ivanjica-35-sema.png"
+                  ]
+    },
+    {
+        "title":  "Montažna kuća Tip 36",
+        "model":  "Tip 36",
+        "broj_soba":  "2",
+        "bruto":  "40.66 m2",
+        "neto":  "36.36 m2",
+        "kategorija":  "do-50m2",
+        "url":  "https://montaznekuce-nijansa.rs/montazna-kuca-tip-36/",
+        "raspored":  [
+                         {
+                             "br":  "1",
+                             "prostorija":  "Terasa",
+                             "povrsina":  "7.50 m2"
+                         },
+                         {
+                             "br":  "2",
+                             "prostorija":  "Predsoblje",
+                             "povrsina":  "3.24 m2"
+                         },
+                         {
+                             "br":  "3",
+                             "prostorija":  "Kupatilo",
+                             "povrsina":  "3.06 m2"
+                         },
+                         {
+                             "br":  "4",
+                             "prostorija":  "Dnevna soba",
+                             "povrsina":  "10.35 m2"
+                         },
+                         {
+                             "br":  "5",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "12.21 m2"
+                         }
+                     ],
+        "slike":  [
+                      "montazna-kuca-tip-ivanjica-36.jpg",
+                      "montazna-kuca-tip-ivanjica-36-2.jpg",
+                      "montazna-kuca-tip-ivanjica-36-sema.png"
+                  ]
+    },
+    {
+        "title":  "Montažna kuća Tip 40",
+        "model":  "Tip 40",
+        "broj_soba":  "3",
+        "bruto":  "44.24 m2",
+        "neto":  "39.26 m2",
+        "kategorija":  "do-50m2",
+        "url":  "https://montaznekuce-nijansa.rs/montazna-kuca-tip-40/",
+        "raspored":  [
+                         {
+                             "br":  "1",
+                             "prostorija":  "Ulaz",
+                             "povrsina":  "1.9 m2"
+                         },
+                         {
+                             "br":  "2",
+                             "prostorija":  "Predsoblje",
+                             "povrsina":  "3.12 m2"
+                         },
+                         {
+                             "br":  "3",
+                             "prostorija":  "Kupatilo",
+                             "povrsina":  "2.76 m2"
+                         },
+                         {
+                             "br":  "4",
+                             "prostorija":  "Kuhinja",
+                             "povrsina":  "8.08 m2"
+                         },
+                         {
+                             "br":  "5",
+                             "prostorija":  "Dnevna soba",
+                             "povrsina":  "11.95 m2"
+                         },
+                         {
+                             "br":  "6",
+                             "prostorija":  "Terasa",
+                             "povrsina":  "5.92 m2"
+                         }
+                     ],
+        "slike":  [
+                      "montazna-kuca-tip-ivanjica-40.jpg",
+                      "montazna-kuca-tip-ivanjica-40-2.jpg",
+                      "montazna-kuca-tip-ivanjica-40-sema.jpg"
+                  ]
+    },
+    {
+        "title":  "Montažna kuća Tip 44a",
+        "model":  "Tip 44a",
+        "broj_soba":  "3",
+        "bruto":  "48.38 m2",
+        "neto":  "43.03 m2",
+        "kategorija":  "do-50m2",
+        "url":  "https://montaznekuce-nijansa.rs/montazna-kuca-tip-44a/",
+        "raspored":  [
+                         {
+                             "br":  "1",
+                             "prostorija":  "Ulaz",
+                             "povrsina":  "1.91 m2"
+                         },
+                         {
+                             "br":  "2",
+                             "prostorija":  "Predsoblje",
+                             "povrsina":  "3.64 m2"
+                         },
+                         {
+                             "br":  "3",
+                             "prostorija":  "Dečija soba",
+                             "povrsina":  "6.82 m2"
+                         },
+                         {
+                             "br":  "4",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "7.48 m2"
+                         },
+                         {
+                             "br":  "5",
+                             "prostorija":  "Dnevna soba",
+                             "povrsina":  "13.28 m2"
+                         },
+                         {
+                             "br":  "6",
+                             "prostorija":  "Kupatilo",
+                             "povrsina":  "5.92 m2"
+                         },
+                         {
+                             "br":  "7",
+                             "prostorija":  "Terasa",
+                             "povrsina":  "7.26 m2"
+                         }
+                     ],
+        "slike":  [
+                      "montazna-kuca-tip-ivanjica-44a.jpg",
+                      "montazna-kuca-tip-ivanjica-44a-2-1.jpg",
+                      "montazna-kuca-tip-ivanjica-44a-sema.jpg"
+                  ]
+    },
+    {
+        "title":  "Montažna planinska kuća Golija 30",
+        "model":  "Tip Golija 30",
+        "broj_soba":  "4",
+        "bruto":  "55.12 m2",
+        "neto":  "47.77 m2",
+        "kategorija":  "golija",
+        "url":  "https://montaznekuce-nijansa.rs/montazna-planinska-kuca-golija-30/",
+        "raspored":  [
+                         {
+                             "br":  "1",
+                             "prostorija":  "Terasa",
+                             "povrsina":  "2.40 m2"
+                         },
+                         {
+                             "br":  "2",
+                             "prostorija":  "Kupatilo",
+                             "povrsina":  "2.71 m2"
+                         },
+                         {
+                             "br":  "3",
+                             "prostorija":  "Dnevna soba",
+                             "povrsina":  "18.63 m2"
+                         },
+                         {
+                             "br":  "4",
+                             "prostorija":  "Terasa",
+                             "povrsina":  "7.24 m2"
+                         },
+                         {
+                             "br":  "5",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "5.51 m2"
+                         },
+                         {
+                             "br":  "6",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "8.47 m2"
+                         },
+                         {
+                             "br":  "7",
+                             "prostorija":  "Lodja",
+                             "povrsina":  "2.81 m2"
+                         }
+                     ],
+        "slike":  [
+                      "montazna-kuca-tip-golija-30.jpg",
+                      "montazna-kuca-tip-golija-30-2.jpg",
+                      "montazna-kuca-tip-golija-30-sema.png"
+                  ]
+    },
+    {
+        "title":  "Montažna planinska kuća Golija 40",
+        "model":  "Tip Golija 40",
+        "broj_soba":  "4",
+        "bruto":  "64.56 m2",
+        "neto":  "58.87 m2",
+        "kategorija":  "golija",
+        "url":  "https://montaznekuce-nijansa.rs/montazna-planinska-kuca-golija-40/",
+        "raspored":  [
+                         {
+                             "br":  "1",
+                             "prostorija":  "Kupatilo",
+                             "povrsina":  "2.71 m2"
+                         },
+                         {
+                             "br":  "2",
+                             "prostorija":  "Predsoblje",
+                             "povrsina":  "2.62 m2"
+                         },
+                         {
+                             "br":  "3",
+                             "prostorija":  "Kuhinja",
+                             "povrsina":  "4.00 m2"
+                         },
+                         {
+                             "br":  "4",
+                             "prostorija":  "Dnevna soba",
+                             "povrsina":  "20.10 m2"
+                         },
+                         {
+                             "br":  "5",
+                             "prostorija":  "Terasa",
+                             "povrsina":  "7.24 m2"
+                         },
+                         {
+                             "br":  "6",
+                             "prostorija":  "Terasa",
+                             "povrsina":  "2.40 m2"
+                         },
+                         {
+                             "br":  "7",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "9.04 m2"
+                         },
+                         {
+                             "br":  "8",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "9.04 m2"
+                         },
+                         {
+                             "br":  "9",
+                             "prostorija":  "Lođa",
+                             "povrsina":  "1.72 m2"
+                         }
+                     ],
+        "slike":  [
+                      "montazna-kuca-tip-golija-40-1.jpg",
+                      "montazna-kuca-tip-golija-40-2.jpg",
+                      "montazna-kuca-tip-golija-40-sema.png"
+                  ]
+    },
+    {
+        "title":  "Montažna planinska kuća Golija 64",
+        "model":  "Tip Golija 64",
+        "broj_soba":  "4",
+        "bruto":  "103.56 m2",
+        "neto":  "92.80 m2",
+        "kategorija":  "golija",
+        "url":  "https://montaznekuce-nijansa.rs/montazna-planinska-kuca-goliha-64/",
+        "raspored":  [
+                         {
+                             "br":  "1",
+                             "prostorija":  "Terasa",
+                             "povrsina":  "6.34 m2"
+                         },
+                         {
+                             "br":  "2",
+                             "prostorija":  "Predsoblje",
+                             "povrsina":  "6.48 m2"
+                         },
+                         {
+                             "br":  "3",
+                             "prostorija":  "Kupatilo",
+                             "povrsina":  "3.95 m2"
+                         },
+                         {
+                             "br":  "4",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "6.05 m2"
+                         },
+                         {
+                             "br":  "5",
+                             "prostorija":  "Dnevna soba/td\u0026gt;",
+                             "povrsina":  "25.79 m2"
+                         },
+                         {
+                             "br":  "6",
+                             "prostorija":  "Terasa",
+                             "povrsina":  "11.19 m2"
+                         },
+                         {
+                             "br":  "7",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "13.03 m2"
+                         },
+                         {
+                             "br":  "8",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "9.67 m2"
+                         },
+                         {
+                             "br":  "9",
+                             "prostorija":  "Lođa",
+                             "povrsina":  "3.47 m2"
+                         },
+                         {
+                             "br":  "10",
+                             "prostorija":  "Lodja",
+                             "povrsina":  "6.83 m2"
+                         }
+                     ],
+        "slike":  [
+                      "montazna-kuca-tip-golija-64.jpg",
+                      "montazna-kuca-tip-golija-64-2.jpg",
+                      "montazna-kuca-tip-golija-64-sema.png"
+                  ]
+    },
+    {
+        "title":  "Montažna kuća Tip 90",
+        "model":  "Tip 90",
+        "broj_soba":  "7",
+        "bruto":  "101.72 m2",
+        "neto":  "92.93 m2",
+        "kategorija":  "preko-100m2",
+        "url":  "https://montaznekuce-nijansa.rs/montazna-kuca-tip-90/",
+        "raspored":  [
+                         {
+                             "br":  "1",
+                             "prostorija":  "Ulaz",
+                             "povrsina":  "3.59 m2"
+                         },
+                         {
+                             "br":  "2",
+                             "prostorija":  "Vetrobran",
+                             "povrsina":  "2.89 m2"
+                         },
+                         {
+                             "br":  "3",
+                             "prostorija":  "Predsoblje",
+                             "povrsina":  "2.11 m2"
+                         },
+                         {
+                             "br":  "4",
+                             "prostorija":  "Stepenište",
+                             "povrsina":  "1.90 m2"
+                         },
+                         {
+                             "br":  "5",
+                             "prostorija":  "Galerija",
+                             "povrsina":  "2.83 m2"
+                         },
+                         {
+                             "br":  "6",
+                             "prostorija":  "Dečija soba",
+                             "povrsina":  "6.54 m2"
+                         },
+                         {
+                             "br":  "7",
+                             "prostorija":  "Dečija soba",
+                             "povrsina":  "9.33 m2"
+                         },
+                         {
+                             "br":  "8",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "9.46 m2"
+                         },
+                         {
+                             "br":  "9",
+                             "prostorija":  "Kupatilo",
+                             "povrsina":  "4.08 m2"
+                         },
+                         {
+                             "br":  "10",
+                             "prostorija":  "Ostava",
+                             "povrsina":  "1.32 m2"
+                         },
+                         {
+                             "br":  "11",
+                             "prostorija":  "Kuhinja",
+                             "povrsina":  "7.37 m2"
+                         },
+                         {
+                             "br":  "12",
+                             "prostorija":  "Trpezarija",
+                             "povrsina":  "12.95 m2"
+                         },
+                         {
+                             "br":  "13",
+                             "prostorija":  "Dnevna soba",
+                             "povrsina":  "14.35 m2"
+                         },
+                         {
+                             "br":  "14",
+                             "prostorija":  "Terasa",
+                             "povrsina":  "8.93 m2"
+                         },
+                         {
+                             "br":  "15",
+                             "prostorija":  "Balkon",
+                             "povrsina":  "5.28 m2"
+                         }
+                     ],
+        "slike":  [
+                      "montazna-kuca-tip-ivanjica-90.jpg",
+                      "montazna-kuca-tip-ivanjica-90-2.jpg",
+                      "montazna-kuca-tip-ivanjica-90-sema.jpg"
+                  ]
+    },
+    {
+        "title":  "Montažna kuća Tip 101",
+        "model":  "Tip 101",
+        "broj_soba":  "7",
+        "bruto":  "110.22 m2",
+        "neto":  "98.76 m2",
+        "kategorija":  "preko-100m2",
+        "url":  "https://montaznekuce-nijansa.rs/montazna-kuca-tip-101/",
+        "raspored":  [
+                         {
+                             "br":  "1",
+                             "prostorija":  "Vetrobran",
+                             "povrsina":  "3.68 m2"
+                         },
+                         {
+                             "br":  "2",
+                             "prostorija":  "Predsoblje",
+                             "povrsina":  "3.88 m2"
+                         },
+                         {
+                             "br":  "3",
+                             "prostorija":  "Stepenište",
+                             "povrsina":  "1.80 m2"
+                         },
+                         {
+                             "br":  "4",
+                             "prostorija":  "Galerija",
+                             "povrsina":  "2.53 m2"
+                         },
+                         {
+                             "br":  "5",
+                             "prostorija":  "Radna soba",
+                             "povrsina":  "7.20 m2"
+                         },
+                         {
+                             "br":  "6",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "10.30 m2"
+                         },
+                         {
+                             "br":  "7",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "10.30 m2"
+                         },
+                         {
+                             "br":  "8",
+                             "prostorija":  "Kupatilo",
+                             "povrsina":  "4.08 m2"
+                         },
+                         {
+                             "br":  "9",
+                             "prostorija":  "Toalet",
+                             "povrsina":  "1.87 m2"
+                         },
+                         {
+                             "br":  "10",
+                             "prostorija":  "Ostava",
+                             "povrsina":  "1.98 m2"
+                         },
+                         {
+                             "br":  "11",
+                             "prostorija":  "Kuhinja",
+                             "povrsina":  "6.98 m2"
+                         },
+                         {
+                             "br":  "12",
+                             "prostorija":  "Trpezarija",
+                             "povrsina":  "7.56 m2"
+                         },
+                         {
+                             "br":  "13",
+                             "prostorija":  "Dnevna soba",
+                             "povrsina":  "19.48 m2"
+                         },
+                         {
+                             "br":  "14",
+                             "prostorija":  "Terasa",
+                             "povrsina":  "11.60 m2"
+                         },
+                         {
+                             "br":  "15",
+                             "prostorija":  "Balkon",
+                             "povrsina":  "3.54 m2"
+                         }
+                     ],
+        "slike":  [
+                      "montazna-kuca-tip-ivanjica-101.jpg",
+                      "montazna-kuca-tip-ivanjica-101-2.jpg",
+                      "montazna-kuca-tip-ivanjica-101-sema.jpg"
+                  ]
+    },
+    {
+        "title":  "Montažna kuća Tip 105",
+        "model":  "Tip 105",
+        "broj_soba":  "7",
+        "bruto":  "121.30 m2",
+        "neto":  "111.57 m2",
+        "kategorija":  "preko-100m2",
+        "url":  "https://montaznekuce-nijansa.rs/montazna-kuca-tip-105/",
+        "raspored":  [
+                         {
+                             "br":  "1",
+                             "prostorija":  "Vetrobran",
+                             "povrsina":  "3.91 m2"
+                         },
+                         {
+                             "br":  "2",
+                             "prostorija":  "Predsoblje",
+                             "povrsina":  "3.06 m2"
+                         },
+                         {
+                             "br":  "3",
+                             "prostorija":  "Stepenište",
+                             "povrsina":  "3.06 m2"
+                         },
+                         {
+                             "br":  "4",
+                             "prostorija":  "Galerija",
+                             "povrsina":  "2.53 m2"
+                         },
+                         {
+                             "br":  "5",
+                             "prostorija":  "Dečija soba",
+                             "povrsina":  "10.65 m2"
+                         },
+                         {
+                             "br":  "6",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "10.65 m2"
+                         },
+                         {
+                             "br":  "7",
+                             "prostorija":  "Radna soba",
+                             "povrsina":  "5.95 m2"
+                         },
+                         {
+                             "br":  "8",
+                             "prostorija":  "Kupatilo",
+                             "povrsina":  "3.84 m2"
+                         },
+                         {
+                             "br":  "9",
+                             "prostorija":  "Toalet",
+                             "povrsina":  "1.10 m2"
+                         },
+                         {
+                             "br":  "10",
+                             "prostorija":  "Ostava",
+                             "povrsina":  "1.21 m2"
+                         },
+                         {
+                             "br":  "11",
+                             "prostorija":  "Kuhinja",
+                             "povrsina":  "7.20 m2"
+                         },
+                         {
+                             "br":  "12",
+                             "prostorija":  "Trpezarija",
+                             "povrsina":  "14.76 m2"
+                         },
+                         {
+                             "br":  "13",
+                             "prostorija":  "Dnevna soba",
+                             "povrsina":  "14.76 m2"
+                         },
+                         {
+                             "br":  "14",
+                             "prostorija":  "Terasa",
+                             "povrsina":  "25.35 m2"
+                         },
+                         {
+                             "br":  "15",
+                             "prostorija":  "Balkon",
+                             "povrsina":  "3.54 m2"
+                         }
+                     ],
+        "slike":  [
+                      "montazna-kuca-tip-ivanjica-105.jpg",
+                      "montazna-kuca-tip-ivanjica-105-2.jpg",
+                      "montazna-kuca-tip-ivanjica-105-sema.png"
+                  ]
+    },
+    {
+        "title":  "Montažna kuća Tip 110",
+        "model":  "Tip 110",
+        "broj_soba":  "7",
+        "bruto":  "125.89 m2",
+        "neto":  "115.81 m2",
+        "kategorija":  "preko-100m2",
+        "url":  "https://montaznekuce-nijansa.rs/montazna-kuca-tip-110/",
+        "raspored":  [
+                         {
+                             "br":  "1",
+                             "prostorija":  "Vetrobran",
+                             "povrsina":  "3.37 m2"
+                         },
+                         {
+                             "br":  "2",
+                             "prostorija":  "Predsoblje",
+                             "povrsina":  "3.24 m2"
+                         },
+                         {
+                             "br":  "3",
+                             "prostorija":  "Stepenište",
+                             "povrsina":  "3.24 m2"
+                         },
+                         {
+                             "br":  "4",
+                             "prostorija":  "Galerija",
+                             "povrsina":  "2.88 m2"
+                         },
+                         {
+                             "br":  "5",
+                             "prostorija":  "Radna soba",
+                             "povrsina":  "5.89 m2"
+                         },
+                         {
+                             "br":  "6",
+                             "prostorija":  "Dečija soba",
+                             "povrsina":  "12.42 m2"
+                         },
+                         {
+                             "br":  "7",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "12.42 m2"
+                         },
+                         {
+                             "br":  "8",
+                             "prostorija":  "Kupatilo",
+                             "povrsina":  "3.91 m2"
+                         },
+                         {
+                             "br":  "9",
+                             "prostorija":  "Ostava",
+                             "povrsina":  "1.21 m2"
+                         },
+                         {
+                             "br":  "10",
+                             "prostorija":  "Kuhinja",
+                             "povrsina":  "6.90 m2"
+                         },
+                         {
+                             "br":  "11",
+                             "prostorija":  "Trpezarija",
+                             "povrsina":  "14.76 m2"
+                         },
+                         {
+                             "br":  "12",
+                             "prostorija":  "Dnevni boravak",
+                             "povrsina":  "14.76 m2"
+                         },
+                         {
+                             "br":  "13",
+                             "prostorija":  "Toalet",
+                             "povrsina":  "1.88 m2"
+                         },
+                         {
+                             "br":  "14",
+                             "prostorija":  "Terasa",
+                             "povrsina":  "25.02 m2"
+                         },
+                         {
+                             "br":  "15",
+                             "prostorija":  "Balkon",
+                             "povrsina":  "3.91 m2"
+                         }
+                     ],
+        "slike":  [
+                      "montazna-kuca-tip-ivanjica-110.jpg",
+                      "montazna-kuca-tip-ivanjica-110-2.jpg",
+                      "montazna-kuca-tip-ivanjica-110-sema.png"
+                  ]
+    },
+    {
+        "title":  "Montažna kuća Tip 117",
+        "model":  "Tip 117",
+        "broj_soba":  "8",
+        "bruto":  "133.86 m2",
+        "neto":  "123.20 m2",
+        "kategorija":  "preko-100m2",
+        "url":  "https://montaznekuce-nijansa.rs/montazna-kuca-tip-117/",
+        "raspored":  [
+                         {
+                             "br":  "1",
+                             "prostorija":  "Terasa",
+                             "povrsina":  "27.31 m2"
+                         },
+                         {
+                             "br":  "2",
+                             "prostorija":  "Vetrobran",
+                             "povrsina":  "3.06 m2"
+                         },
+                         {
+                             "br":  "3",
+                             "prostorija":  "Predsoblje",
+                             "povrsina":  "5.22 m2"
+                         },
+                         {
+                             "br":  "4",
+                             "prostorija":  "Stepenište",
+                             "povrsina":  "3.24 m2"
+                         },
+                         {
+                             "br":  "5",
+                             "prostorija":  "Galerija",
+                             "povrsina":  "5.22 m2"
+                         },
+                         {
+                             "br":  "6",
+                             "prostorija":  "Toalet",
+                             "povrsina":  "1.70 m2"
+                         },
+                         {
+                             "br":  "7",
+                             "prostorija":  "Ostava",
+                             "povrsina":  "1.70 m2"
+                         },
+                         {
+                             "br":  "8",
+                             "prostorija":  "Kuhinja",
+                             "povrsina":  "6.96 m2"
+                         },
+                         {
+                             "br":  "9",
+                             "prostorija":  "Trpezarija",
+                             "povrsina":  "7.56 m2"
+                         },
+                         {
+                             "br":  "10",
+                             "prostorija":  "Dnevna soba",
+                             "povrsina":  "19.03 m2"
+                         },
+                         {
+                             "br":  "11",
+                             "prostorija":  "Dečija soba",
+                             "povrsina":  "5.52 m2"
+                         },
+                         {
+                             "br":  "12",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "8.05 m2"
+                         },
+                         {
+                             "br":  "13",
+                             "prostorija":  "Kupatilo",
+                             "povrsina":  "4.32 m2"
+                         },
+                         {
+                             "br":  "14",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "10.15 m2"
+                         },
+                         {
+                             "br":  "15",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "10.15 m2"
+                         },
+                         {
+                             "br":  "15",
+                             "prostorija":  "Balkon",
+                             "povrsina":  "4.01 m2"
+                         }
+                     ],
+        "slike":  [
+                      "montazna-kuca-tip-ivanjica-117.jpg",
+                      "montazna-kuca-tip-ivanjica-117-2.jpg",
+                      "montazna-kuca-tip-ivanjica-117-sema.png"
+                  ]
+    },
+    {
+        "title":  "Montažna kuća Tip 127",
+        "model":  "Tip 127",
+        "broj_soba":  "8",
+        "bruto":  "139.14 m2",
+        "neto":  "126.84 m2",
+        "kategorija":  "preko-100m2",
+        "url":  "https://montaznekuce-nijansa.rs/montazna-kuca-tip-127/",
+        "raspored":  [
+                         {
+                             "br":  "1",
+                             "prostorija":  "Terasa",
+                             "povrsina":  "7.20 m2"
+                         },
+                         {
+                             "br":  "2",
+                             "prostorija":  "Vetrobran",
+                             "povrsina":  "3.74 m2"
+                         },
+                         {
+                             "br":  "3",
+                             "prostorija":  "Predsoblje",
+                             "povrsina":  "5.27 m2"
+                         },
+                         {
+                             "br":  "4",
+                             "prostorija":  "Dnevna soba",
+                             "povrsina":  "21.78 m2"
+                         },
+                         {
+                             "br":  "5",
+                             "prostorija":  "Trpezarija",
+                             "povrsina":  "12.72 m2"
+                         },
+                         {
+                             "br":  "6",
+                             "prostorija":  "Kuhinja",
+                             "povrsina":  "8.28 m2"
+                         },
+                         {
+                             "br":  "7",
+                             "prostorija":  "Ostava",
+                             "povrsina":  "2.88 m2"
+                         },
+                         {
+                             "br":  "8",
+                             "prostorija":  "Toalet",
+                             "povrsina":  "2.40 m2"
+                         },
+                         {
+                             "br":  "9",
+                             "prostorija":  "Kupatilo",
+                             "povrsina":  "5.22 m2"
+                         },
+                         {
+                             "br":  "10",
+                             "prostorija":  "Degažman",
+                             "povrsina":  "5.40 m2"
+                         },
+                         {
+                             "br":  "11",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "13.63 m2"
+                         },
+                         {
+                             "br":  "12",
+                             "prostorija":  "Dečija soba",
+                             "povrsina":  "10.44 m2"
+                         },
+                         {
+                             "br":  "13",
+                             "prostorija":  "Dečija soba",
+                             "povrsina":  "10.50 m2"
+                         },
+                         {
+                             "br":  "14",
+                             "prostorija":  "Terasa",
+                             "povrsina":  "6.66 m2"
+                         },
+                         {
+                             "br":  "15",
+                             "prostorija":  "Terasa",
+                             "povrsina":  "10.72 m2"
+                         }
+                     ],
+        "slike":  [
+                      "montazna-kuca-tip-ivanjica-127.jpg",
+                      "montazna-kuca-tip-ivanjica-127-2.jpg",
+                      "montazna-kuca-tip-ivanjica-127-sema.png"
+                  ]
+    },
+    {
+        "title":  "Montažna kuća Tip 135",
+        "model":  "Tip 135",
+        "broj_soba":  "8",
+        "bruto":  "146.90 m2",
+        "neto":  "134.39 m2",
+        "kategorija":  "preko-100m2",
+        "url":  "https://montaznekuce-nijansa.rs/montazna-kuca-tip-135/",
+        "raspored":  [
+                         {
+                             "br":  "1",
+                             "prostorija":  "Ulaz",
+                             "povrsina":  "6.01 m2"
+                         },
+                         {
+                             "br":  "2",
+                             "prostorija":  "Vetrobran",
+                             "povrsina":  "3.68 m2"
+                         },
+                         {
+                             "br":  "3",
+                             "prostorija":  "Toalet",
+                             "povrsina":  "2.76 m2"
+                         },
+                         {
+                             "br":  "4",
+                             "prostorija":  "Predsoblje",
+                             "povrsina":  "3.74 m2"
+                         },
+                         {
+                             "br":  "5",
+                             "prostorija":  "Degažman",
+                             "povrsina":  "4.08 m2"
+                         },
+                         {
+                             "br":  "6",
+                             "prostorija":  "Dečija soba",
+                             "povrsina":  "10.15 m2"
+                         },
+                         {
+                             "br":  "7",
+                             "prostorija":  "Kupatilo",
+                             "povrsina":  "3.91 m2"
+                         },
+                         {
+                             "br":  "8",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "12.60 m2"
+                         },
+                         {
+                             "br":  "9",
+                             "prostorija":  "Ostava",
+                             "povrsina":  "2.88 m2"
+                         },
+                         {
+                             "br":  "10",
+                             "prostorija":  "Kuhinja",
+                             "povrsina":  "5.03 m2"
+                         },
+                         {
+                             "br":  "11",
+                             "prostorija":  "Trpezarija",
+                             "povrsina":  "12.96 m2"
+                         },
+                         {
+                             "br":  "12",
+                             "prostorija":  "Dnevna soba",
+                             "povrsina":  "19.74 m2"
+                         },
+                         {
+                             "br":  "13",
+                             "prostorija":  "Degažman",
+                             "povrsina":  "2.72 m2"
+                         },
+                         {
+                             "br":  "14",
+                             "prostorija":  "Dečija soba",
+                             "povrsina":  "12.60 m2"
+                         },
+                         {
+                             "br":  "15",
+                             "prostorija":  "Kupatilo",
+                             "povrsina":  "3.06 m2"
+                         },
+                         {
+                             "br":  "16",
+                             "prostorija":  "Spavaća soba",
+                             "povrsina":  "10.15 m2"
+                         },
+                         {
+                             "br":  "17",
+                             "prostorija":  "Terasa",
+                             "povrsina":  "18.32 m2"
+                         }
+                     ],
+        "slike":  [
+                      "montazna-kuca-tip-ivanjica-135.jpg",
+                      "montazna-kuca-tip-ivanjica-135-2.jpg",
+                      "montazna-kuca-tip-ivanjica-135-sema.png"
+                  ]
+    }
+]

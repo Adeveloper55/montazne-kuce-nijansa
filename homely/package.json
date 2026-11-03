@@ -1,0 +1,10 @@
+{
+  "name": "montazne-kuce-nijansa-homely",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Homely theme base for Montažne kuće Nijansa redesign",
+  "scripts": {
+    "start": "npx --yes serve -l 3000 .",
+    "dev": "npx --yes serve -l 3000 ."
+  }
+}
