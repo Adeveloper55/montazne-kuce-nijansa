@@ -101,6 +101,36 @@ a[href^="mailto:"]:hover {
   text-decoration: underline;
 }
 
+/* ========== Hero: Tipski card over image on desktop ========== */
+.nk-hero {
+  position: relative;
+}
+
+.nk-hero-lead {
+  font-size: 1.15rem;
+  line-height: 1.55;
+  opacity: 0.9;
+  max-width: 36rem;
+}
+
+.nk-hero-tipski {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2.5rem;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.nk-hero-tipski .container,
+.nk-hero-tipski .bg-blur {
+  pointer-events: auto;
+}
+
+.nk-tipski-desc {
+  opacity: 0.85;
+}
+
 /* ========== Mobile / responsive polish ========== */
 @media (max-width: 991px) {
   header.header-light #logo img {
@@ -183,39 +213,53 @@ a[href^="mailto:"]:hover {
     box-shadow: none;
   }
 
-  /* Hero — stack title + card over full-bleed background */
-  section.mt-sm-50 {
+  /* Hero mobile: image full, Tipski card BELOW (no overlap) */
+  .nk-hero.mt-sm-50,
+  section.nk-hero {
     margin-top: 59px !important;
   }
 
-  section.mt-sm-50 .mh-800 {
-    min-height: calc(100svh - 59px) !important;
+  .nk-hero-media.mh-800 {
+    min-height: 68vh !important;
+    height: 68vh;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1.25rem 0 1.5rem;
-    position: relative;
+    padding: 1.1rem 0 1.25rem;
   }
 
-  section.mt-sm-50 .mh-800 > .abs {
+  .nk-hero-media > .abs {
     position: relative !important;
     inset: auto !important;
     width: 100% !important;
     z-index: 3;
-    padding-top: 0.5rem !important;
-    padding-bottom: 0.5rem !important;
+    padding-top: 0.35rem !important;
+    padding-bottom: 0.35rem !important;
     margin-top: 0 !important;
   }
 
-  section.mt-sm-50 .mh-800 .swiper {
+  .nk-hero-media .swiper {
     position: absolute !important;
     inset: 0;
     z-index: 0;
     height: 100% !important;
   }
 
-  section.mt-sm-50 .mh-800 .wm {
+  .nk-hero-media .wm {
     display: none;
+  }
+
+  .nk-hero-lead {
+    font-size: 0.98rem;
+    line-height: 1.45;
+    margin-top: 0.85rem !important;
+    max-width: 100%;
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.55);
+  }
+
+  .nk-hero-address h5 {
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
   }
 
   .fs-72,
@@ -225,31 +269,49 @@ a[href^="mailto:"]:hover {
     word-break: break-word;
   }
 
-  /* Tipski modeli card */
-  .bg-blur.rounded-1 {
-    padding: 0.85rem !important;
+  /* Tipski below hero image on phones */
+  .nk-hero-tipski {
+    position: relative !important;
+    bottom: auto !important;
+    left: auto;
+    right: auto;
+    margin-top: 0;
+    padding: 1.5rem 0 1rem;
+    background: var(--nk-header-bg, #092519);
+    pointer-events: auto;
   }
 
-  .bg-blur.rounded-1 .col-6 {
+  .nk-hero-tipski .bg-blur {
+    padding: 1rem !important;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nk-hero-tipski .col-6 {
     flex: 0 0 100%;
     max-width: 100%;
   }
 
-  .bg-blur.rounded-1 .col-6:first-child img {
-    max-height: 140px;
+  .nk-hero-tipski .col-6:first-child {
+    margin-bottom: 0.65rem;
+  }
+
+  .nk-hero-tipski .col-6:first-child img {
+    max-height: 180px;
+    width: 100%;
     object-fit: cover;
   }
 
-  .bg-blur.rounded-1 h3 {
-    font-size: 1.15rem;
-    margin-bottom: 0.35rem;
+  .nk-hero-tipski h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.4rem;
   }
 
-  .bg-blur.rounded-1 p.xs-hide {
+  .nk-tipski-desc {
     display: block !important;
-    font-size: 0.85rem;
-    margin-bottom: 0.7rem;
-    line-height: 1.4;
+    font-size: 0.9rem;
+    margin-bottom: 0.85rem;
+    line-height: 1.45;
   }
 
   /* About lead text */
