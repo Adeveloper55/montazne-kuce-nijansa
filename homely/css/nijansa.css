@@ -100,20 +100,43 @@ header.header-light.smaller #logo img {
   max-height: 46px;
 }
 
+/* Header CTA — darker green fill but lighter than bar so it reads clearly */
+header.header-light .menu_side_area .btn-main,
+header.header-light .menu_side_area a.btn-main {
+  background: #2f6b4f !important;
+  background-color: #2f6b4f !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.28);
+}
+
+header.header-light .menu_side_area .btn-main:hover,
+header.header-light .menu_side_area a.btn-main:hover {
+  background: #3a805e !important;
+  background-color: #3a805e !important;
+  border-color: var(--nk-gold) !important;
+}
+
+/* Close icon = X when menu open (Homely uses a thin dash) */
+header.header-light #menu-btn.menu-open:before {
+  content: "\f00d";
+  font-size: 18px;
+}
+
 header.header-light #menu-btn,
 header.header-light.header-mobile #menu-btn,
 header.header-light.header-mobile #menu-btn:hover {
   color: #fff !important;
-  background: transparent !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-radius: 8px;
 }
 
 header.header-light.header-mobile #mainmenu li,
 header.header-light.header-mobile #mainmenu li ul li a.menu-item {
-  border-color: rgba(255, 255, 255, 0.12) !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
 }
 
 header.header-light.header-mobile #mainmenu {
-  background: var(--nk-header-bg-soft);
+  background: var(--nk-header-bg);
 }
 
 /* Footer logo sizing */
@@ -270,28 +293,44 @@ a[href^="mailto:"]:hover {
 @media (max-width: 767px) {
   header.header-light #logo img,
   header.header-light .logo-mobile {
-    max-height: 38px !important;
+    max-height: 36px !important;
     width: auto !important;
   }
 
-  /* Homely hides header CTA on phones — keep a compact one */
-  header.header-light a.btn-main {
+  header.header-light .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  header.header-light .de-flex {
+    align-items: center;
+    min-height: 62px;
+  }
+
+  /* Homely hides header CTA on phones — keep compact, tappable Pozovi */
+  header.header-light .menu_side_area a.btn-main {
     display: inline-flex !important;
     align-items: center;
-    padding: 6px 10px !important;
-    font-size: 11px !important;
+    justify-content: center;
+    padding: 9px 14px !important;
+    font-size: 13px !important;
     line-height: 1.2 !important;
     white-space: nowrap;
-    margin-right: 4px;
+    margin-right: 0;
+    border-radius: 8px;
+    pointer-events: auto !important;
+    z-index: 1002;
+    position: relative;
   }
 
   header.header-light .menu_side_area {
     display: flex !important;
     align-items: center;
     justify-content: flex-end;
-    gap: 6px;
+    gap: 8px;
     width: auto !important;
     margin-left: 8px;
+    flex-shrink: 0;
   }
 
   /* Clip closed menu (Homely pattern); expand when open */
@@ -308,6 +347,7 @@ a[href^="mailto:"]:hover {
   header.header-mobile.menu-open {
     overflow-y: auto !important;
     background: var(--nk-header-bg) !important;
+    max-height: 100vh;
   }
 
   /* Content clear under fixed mobile header */
@@ -317,12 +357,74 @@ a[href^="mailto:"]:hover {
   }
 
   header.header-mobile #mainmenu {
-    background: var(--nk-header-bg);
+    background: var(--nk-header-bg) !important;
     z-index: 100;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    padding: 0.5rem 1rem 1.75rem !important;
+    margin-top: 0.25rem;
+    border-top: 1px solid rgba(197, 157, 95, 0.2);
   }
 
   header.header-mobile.menu-open #mainmenu {
     box-shadow: none;
+  }
+
+  header.header-mobile #mainmenu > li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+    margin: 0 !important;
+  }
+
+  header.header-mobile #mainmenu > li:last-child {
+    border-bottom: 0 !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  header.header-mobile #mainmenu a.menu-item {
+    display: block;
+    padding: 1rem 0.5rem !important;
+    font-size: 1.12rem !important;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: #f5f7f4 !important;
+    border-radius: 8px;
+  }
+
+  header.header-mobile #mainmenu a.menu-item:hover,
+  header.header-mobile #mainmenu a.menu-item:active,
+  header.header-mobile #mainmenu li a.active {
+    color: var(--nk-gold) !important;
+    background: rgba(255, 255, 255, 0.04) !important;
+  }
+
+  /* Keep float call button below open menu */
+  header.header-mobile.menu-open ~ * .nk-call-float,
+  body:has(header.menu-open) .nk-call-float {
+    z-index: 900;
+  }
+
+  header.header-light #menu-btn,
+  header.header-light.header-mobile #menu-btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-left: 0;
+    float: none;
+    line-height: 1;
+    flex-shrink: 0;
+    padding: 0;
+    cursor: pointer;
+    pointer-events: auto !important;
+    z-index: 1002;
+    position: relative;
+  }
+
+  header.header-light #menu-btn:before {
+    font-size: 18px;
+    line-height: 1;
   }
 
   /* Hero mobile: image full, Tipski card BELOW (no overlap) */
