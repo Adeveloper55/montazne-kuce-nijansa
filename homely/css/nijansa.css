@@ -72,6 +72,18 @@ footer img.w-150px {
   height: auto;
 }
 
+/* Clickable phone / email inherit surrounding text color */
+a[href^="tel:"],
+a[href^="mailto:"] {
+  color: inherit;
+  text-decoration: none;
+}
+a[href^="tel:"]:hover,
+a[href^="mailto:"]:hover {
+  color: var(--primary-color, #b5c99a);
+  text-decoration: underline;
+}
+
 /* ========== Mobile / responsive polish ========== */
 @media (max-width: 991px) {
   header.header-light #logo img {
