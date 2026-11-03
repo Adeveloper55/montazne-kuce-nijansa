@@ -1,0 +1,347 @@
+/* Nijansa catalog — premium cards on Homely theme (additive only) */
+
+.nk-cat-card {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #0f1f1a;
+  text-decoration: none !important;
+  color: #fff !important;
+  height: 100%;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.18);
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.55s ease;
+}
+
+.nk-cat-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.28);
+}
+
+.nk-cat-card .nk-media {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+
+.nk-cat-card .nk-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.nk-cat-card:hover .nk-media img {
+  transform: scale(1.08);
+}
+
+.nk-cat-card .nk-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 35%, rgba(8, 20, 16, 0.92) 100%);
+  z-index: 1;
+  transition: opacity 0.4s ease;
+}
+
+.nk-cat-card .nk-body {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  padding: 1.4rem 1.5rem 1.6rem;
+}
+
+.nk-cat-card .nk-eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.8;
+  margin-bottom: 0.35rem;
+}
+
+.nk-cat-card h3 {
+  color: #fff;
+  margin: 0 0 0.55rem;
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+.nk-cat-card .nk-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  transform: translateY(6px);
+  transition: opacity 0.35s ease, transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.nk-cat-card:hover .nk-cta {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Model listing cards */
+.nk-model-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(15, 31, 26, 0.08);
+  box-shadow: 0 14px 40px rgba(15, 31, 26, 0.08);
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.5s ease;
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.bg-dark-1 .nk-model-card {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #fff !important;
+}
+
+.nk-model-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 26px 55px rgba(15, 31, 26, 0.16);
+}
+
+.nk-model-card .nk-media {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 11;
+  background: #e8eee9;
+}
+
+.nk-model-card .nk-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.nk-model-card:hover .nk-media img {
+  transform: scale(1.07);
+}
+
+.nk-model-card .nk-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+  background: rgba(15, 31, 26, 0.82);
+  color: #fff;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.4rem 0.7rem;
+  border-radius: 999px;
+  backdrop-filter: blur(8px);
+}
+
+.nk-model-card .nk-body {
+  padding: 1.25rem 1.35rem 1.4rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.nk-model-card h3 {
+  margin: 0 0 0.85rem;
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+.bg-dark-1 .nk-model-card h3 {
+  color: #fff;
+}
+
+.nk-specs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.55rem;
+  margin-top: auto;
+}
+
+.nk-spec {
+  text-align: center;
+  padding: 0.65rem 0.35rem;
+  border-radius: 10px;
+  background: rgba(15, 31, 26, 0.04);
+}
+
+.bg-dark-1 .nk-spec {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.nk-spec .nk-spec-val {
+  display: block;
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+
+.nk-spec .nk-spec-label {
+  display: block;
+  font-size: 11px;
+  opacity: 0.7;
+  margin-top: 0.15rem;
+  letter-spacing: 0.02em;
+}
+
+.nk-model-card .nk-more {
+  margin-top: 1rem;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0.55;
+  transition: opacity 0.3s ease, letter-spacing 0.35s ease;
+}
+
+.nk-model-card:hover .nk-more {
+  opacity: 1;
+  letter-spacing: 0.09em;
+}
+
+/* Detail page */
+.nk-detail-gallery a {
+  display: block;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.nk-detail-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.nk-detail-gallery a:hover img {
+  transform: scale(1.04);
+}
+
+.nk-info-panel {
+  border-radius: 14px;
+  padding: 1.75rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  height: 100%;
+}
+
+.nk-info-panel.light {
+  background: #fff;
+  border: 1px solid rgba(15, 31, 26, 0.08);
+  box-shadow: 0 14px 40px rgba(15, 31, 26, 0.06);
+}
+
+.nk-info-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nk-info-panel.light .nk-info-row {
+  border-bottom-color: rgba(15, 31, 26, 0.08);
+}
+
+.nk-info-row:last-child {
+  border-bottom: 0;
+}
+
+.nk-info-row span:first-child {
+  opacity: 0.7;
+}
+
+.nk-info-row span:last-child {
+  font-weight: 700;
+  text-align: right;
+}
+
+.nk-room-row {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nk-info-panel.light .nk-room-row {
+  border-bottom-color: rgba(15, 31, 26, 0.07);
+}
+
+.nk-room-row:last-child {
+  border-bottom: 0;
+}
+
+.nk-room-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  background: var(--primary-color, #a8c4a2);
+  color: #0f1f1a;
+  flex-shrink: 0;
+}
+
+.nk-room-name {
+  flex: 1;
+}
+
+.nk-room-size {
+  font-weight: 700;
+}
+
+.nk-stat-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 767px) {
+  .nk-stat-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .nk-specs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.nk-stat {
+  text-align: center;
+  padding: 1.25rem 0.75rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nk-stat img {
+  width: 40px;
+  margin-bottom: 0.75rem;
+}
+
+.nk-stat .val {
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.nk-stat .lbl {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-top: 0.25rem;
+}
