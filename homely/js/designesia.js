@@ -1823,17 +1823,26 @@
         
      });
 
-    $(window).on('load', function() {
+    function deFinishLoader() {
         jQuery('#de-loader').fadeOut(500);
-        filterGallery();
-        window.dispatchEvent(new Event('resize'));        
-         filterGallery();
-         masonry();
+        try {
+            filterGallery();
+            window.dispatchEvent(new Event('resize'));
+            filterGallery();
+            masonry();
+            $('.grid').isotope({
+                itemSelector: '.grid-item'
+            });
+            gridGallery();
+        } catch (e) {}
+    }
 
-        $('.grid').isotope({
-            itemSelector: '.grid-item'
-        });
-        gridGallery();
-    });
+    $(window).on('load', deFinishLoader);
+    // Fallback: some local/dev environments never fire window.load
+    setTimeout(function () {
+        if (jQuery('#de-loader').is(':visible')) {
+            deFinishLoader();
+        }
+    }, 2500);
     
  })(jQuery);
