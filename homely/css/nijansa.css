@@ -8,6 +8,277 @@
   display: none !important;
 }
 
+/* ========== Brand header (green) ========== */
+:root {
+  --nk-header-bg: #092519;
+  --nk-header-bg-soft: #0d2f20;
+  --nk-gold: #c59d5f;
+}
+
+header.header-light,
+header.header-light.smaller,
+header.header-light.header-mobile,
+header.header-light.smaller.scroll-light {
+  background: var(--nk-header-bg) !important;
+  border-bottom: 1px solid rgba(197, 157, 95, 0.18);
+}
+
+header.header-light #mainmenu > li > a,
+header.header-light.smaller #mainmenu > li > a,
+header.header-light.smaller.scroll-light #mainmenu > li > a,
+header.header-light.header-mobile #mainmenu a.menu-item {
+  color: #f5f7f4 !important;
+}
+
+header.header-light #mainmenu > li > a:hover,
+header.header-light #mainmenu li a.active {
+  color: var(--nk-gold) !important;
+}
+
+header.header-light #logo img {
+  max-height: 58px;
+  width: auto;
+  height: auto;
+}
+
+header.header-light.smaller #logo img {
+  max-height: 46px;
+}
+
+header.header-light .menu_side_area .btn-main {
+  background: var(--primary-color, #b5c99a);
+  color: #0f1f1a !important;
+}
+
+header.header-light #menu-btn,
+header.header-light.header-mobile #menu-btn,
+header.header-light.header-mobile #menu-btn:hover {
+  color: #fff !important;
+  background: transparent !important;
+}
+
+header.header-light.header-mobile #mainmenu li,
+header.header-light.header-mobile #mainmenu li ul li a.menu-item {
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+header.header-light.header-mobile #mainmenu {
+  background: var(--nk-header-bg-soft);
+}
+
+/* Footer logo sizing */
+footer img.w-150px {
+  max-width: 160px;
+  height: auto;
+}
+
+/* ========== Mobile / responsive polish ========== */
+@media (max-width: 991px) {
+  header.header-light #logo img {
+    max-height: 40px;
+  }
+
+  header.header-light .menu_side_area .btn-main {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  .nk-cat-card h3 {
+    font-size: 1.15rem;
+  }
+
+  .nk-model-card .nk-body {
+    padding: 1rem 1.1rem 1.15rem;
+  }
+
+  .nk-info-panel {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 767px) {
+  header.header-light #logo img,
+  header.header-light .logo-mobile {
+    max-height: 38px !important;
+    width: auto !important;
+  }
+
+  /* Homely hides header CTA on phones — keep a compact one */
+  header.header-light a.btn-main {
+    display: inline-flex !important;
+    align-items: center;
+    padding: 6px 10px !important;
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+    white-space: nowrap;
+    margin-right: 4px;
+  }
+
+  header.header-light .menu_side_area {
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+    width: auto !important;
+    margin-left: 8px;
+  }
+
+  /* Clip closed menu (Homely pattern); expand when open */
+  header.header-mobile {
+    overflow: hidden !important;
+  }
+
+  header.header-mobile.menu-open {
+    overflow-y: auto !important;
+    background: var(--nk-header-bg) !important;
+  }
+
+  header.header-mobile #mainmenu {
+    background: var(--nk-header-bg);
+    z-index: 100;
+  }
+
+  header.header-mobile.menu-open #mainmenu {
+    box-shadow: none;
+  }
+
+  /* Hero — stack title + card over full-bleed background */
+  section.mt-sm-50 {
+    margin-top: 59px !important;
+  }
+
+  section.mt-sm-50 .mh-800 {
+    min-height: calc(100svh - 59px) !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.25rem 0 1.5rem;
+    position: relative;
+  }
+
+  section.mt-sm-50 .mh-800 > .abs {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    z-index: 3;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    margin-top: 0 !important;
+  }
+
+  section.mt-sm-50 .mh-800 .swiper {
+    position: absolute !important;
+    inset: 0;
+    z-index: 0;
+    height: 100% !important;
+  }
+
+  section.mt-sm-50 .mh-800 .wm {
+    display: none;
+  }
+
+  .fs-72,
+  h1.fs-72 {
+    font-size: clamp(1.7rem, 8.5vw, 2.35rem) !important;
+    line-height: 1.15 !important;
+    word-break: break-word;
+  }
+
+  /* Tipski modeli card */
+  .bg-blur.rounded-1 {
+    padding: 0.85rem !important;
+  }
+
+  .bg-blur.rounded-1 .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .bg-blur.rounded-1 .col-6:first-child img {
+    max-height: 140px;
+    object-fit: cover;
+  }
+
+  .bg-blur.rounded-1 h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .bg-blur.rounded-1 p.xs-hide {
+    display: block !important;
+    font-size: 0.85rem;
+    margin-bottom: 0.7rem;
+    line-height: 1.4;
+  }
+
+  /* About lead text */
+  section.bg-dark-1 h3 {
+    font-size: clamp(1.15rem, 5.2vw, 1.45rem) !important;
+    line-height: 1.45 !important;
+    font-weight: 600;
+  }
+
+  /* Catalog / project grids */
+  .nk-cat-card .nk-body,
+  .nk-model-card .nk-body {
+    padding: 1rem;
+  }
+
+  .nk-specs {
+    gap: 0.4rem;
+  }
+
+  .nk-spec {
+    padding: 0.5rem 0.25rem;
+  }
+
+  .nk-spec .nk-spec-val {
+    font-size: 0.85rem;
+  }
+
+  .nk-stat-strip {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .nk-detail-gallery img {
+    aspect-ratio: 16 / 11;
+  }
+
+  /* Subheader / page titles */
+  #subheader h1,
+  .subheader h1 {
+    font-size: clamp(1.6rem, 7vw, 2.2rem) !important;
+  }
+
+  /* Forms */
+  .form-control,
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    font-size: 16px !important; /* avoid iOS zoom */
+  }
+
+  footer .w-150px {
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  header.header-light .menu_side_area .btn-main span {
+    font-size: 11px;
+  }
+
+  header.header-light #logo img {
+    max-height: 32px;
+  }
+
+  .mh-800 {
+    min-height: 62vh !important;
+  }
+}
+
 .nk-cat-card {
   display: block;
   position: relative;
