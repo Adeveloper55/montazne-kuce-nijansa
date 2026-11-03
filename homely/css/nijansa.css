@@ -13,6 +13,44 @@
   --nk-header-bg: #092519;
   --nk-header-bg-soft: #0d2f20;
   --nk-gold: #c59d5f;
+  --nk-btn-bg: #0a2e1f;
+  --nk-btn-bg-hover: #134032;
+  --nk-btn-text: #ffffff;
+}
+
+/* Darker green buttons, white labels */
+a.btn-main,
+.btn-main,
+a.btn-main.fx-slide,
+.btn-main.fx-slide,
+a.btn-main.text-dark,
+.btn-main.text-dark,
+a.btn-main.hover-white,
+.btn-main.hover-white,
+header.header-light .menu_side_area .btn-main {
+  background: var(--nk-btn-bg) !important;
+  background-color: var(--nk-btn-bg) !important;
+  color: var(--nk-btn-text) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+a.btn-main span,
+.btn-main span,
+a.btn-main.text-dark span,
+.btn-main.text-dark span {
+  color: var(--nk-btn-text) !important;
+}
+
+a.btn-main:hover,
+.btn-main:hover,
+a.btn-main.fx-slide:hover,
+.btn-main.fx-slide:hover,
+a.btn-main.text-dark:hover,
+.btn-main.text-dark:hover,
+header.header-light .menu_side_area .btn-main:hover {
+  background: var(--nk-btn-bg-hover) !important;
+  background-color: var(--nk-btn-bg-hover) !important;
+  color: var(--nk-btn-text) !important;
 }
 
 /* Sticky menu — always visible on desktop + mobile */
@@ -62,11 +100,6 @@ header.header-light.smaller #logo img {
   max-height: 46px;
 }
 
-header.header-light .menu_side_area .btn-main {
-  background: var(--primary-color, #b5c99a);
-  color: #0f1f1a !important;
-}
-
 header.header-light #menu-btn,
 header.header-light.header-mobile #menu-btn,
 header.header-light.header-mobile #menu-btn:hover {
@@ -99,6 +132,58 @@ a[href^="tel:"]:hover,
 a[href^="mailto:"]:hover {
   color: var(--primary-color, #b5c99a);
   text-decoration: underline;
+}
+
+/* Call strip + floating Pozovi */
+.nk-call-strip {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nk-call-float {
+  position: fixed;
+  right: 18px;
+  bottom: 22px;
+  z-index: 999;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 64px;
+  height: 52px;
+  padding: 0 1.1rem;
+  border-radius: 999px;
+  background: var(--nk-btn-bg, #0a2e1f);
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  text-decoration: none !important;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.nk-call-float:hover {
+  transform: translateY(-3px);
+  background: var(--nk-btn-bg-hover, #134032);
+  color: #fff !important;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 767px) {
+  .nk-call-float {
+    right: 14px;
+    bottom: 16px;
+    left: 14px;
+    width: auto;
+    height: 50px;
+    border-radius: 12px;
+    font-size: 16px;
+  }
+
+  #back-to-top {
+    bottom: 78px !important;
+  }
 }
 
 /* ========== Hero: Tipski card over image on desktop ========== */
@@ -138,18 +223,20 @@ a[href^="mailto:"]:hover {
     0 4px 16px rgba(0, 0, 0, 0.55);
 }
 
-.nk-hero-tipski {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 2.5rem;
-  z-index: 4;
-  pointer-events: none;
+/* Desktop: tipski lives top-right in hero (replaces Nijansa/phone) */
+.nk-hero-tipski-card {
+  text-align: left;
+  margin-top: 0.5rem;
 }
 
-.nk-hero-tipski .container,
-.nk-hero-tipski .bg-blur {
-  pointer-events: auto;
+.nk-hero-tipski-card .nk-tipski-desc {
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+/* Mobile-only tipski block under hero media */
+.nk-hero-tipski-mobile {
+  display: none;
 }
 
 .nk-tipski-desc {
@@ -292,8 +379,9 @@ a[href^="mailto:"]:hover {
     word-break: break-word;
   }
 
-  /* Tipski below hero image on phones */
-  .nk-hero-tipski {
+  /* Tipski below hero image on phones only */
+  .nk-hero-tipski-mobile {
+    display: block;
     position: relative !important;
     bottom: auto !important;
     left: auto;
@@ -304,28 +392,28 @@ a[href^="mailto:"]:hover {
     pointer-events: auto;
   }
 
-  .nk-hero-tipski .bg-blur {
+  .nk-hero-tipski-mobile .bg-blur {
     padding: 1rem !important;
     background: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  .nk-hero-tipski .col-6 {
+  .nk-hero-tipski-mobile .col-6 {
     flex: 0 0 100%;
     max-width: 100%;
   }
 
-  .nk-hero-tipski .col-6:first-child {
+  .nk-hero-tipski-mobile .col-6:first-child {
     margin-bottom: 0.65rem;
   }
 
-  .nk-hero-tipski .col-6:first-child img {
+  .nk-hero-tipski-mobile .col-6:first-child img {
     max-height: 180px;
     width: 100%;
     object-fit: cover;
   }
 
-  .nk-hero-tipski h3 {
+  .nk-hero-tipski-mobile h3 {
     font-size: 1.25rem;
     margin-bottom: 0.4rem;
   }
