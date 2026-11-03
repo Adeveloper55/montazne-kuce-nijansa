@@ -109,8 +109,29 @@ a[href^="mailto:"]:hover {
 .nk-hero-lead {
   font-size: 1.15rem;
   line-height: 1.55;
-  opacity: 0.9;
+  opacity: 1;
+  color: #fff;
   max-width: 36rem;
+  font-weight: 500;
+  text-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.85),
+    0 4px 18px rgba(0, 0, 0, 0.65),
+    0 0 40px rgba(0, 0, 0, 0.35);
+}
+
+.nk-hero-media h1 {
+  color: #fff;
+  text-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.75),
+    0 6px 24px rgba(0, 0, 0, 0.55),
+    0 0 48px rgba(0, 0, 0, 0.3);
+}
+
+.nk-hero-address h5 {
+  color: #fff;
+  text-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.8),
+    0 4px 16px rgba(0, 0, 0, 0.5);
 }
 
 .nk-hero-tipski {
@@ -255,11 +276,18 @@ a[href^="mailto:"]:hover {
     line-height: 1.45;
     margin-top: 0.85rem !important;
     max-width: 100%;
-    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.55);
+    font-weight: 600;
+    text-shadow:
+      0 1px 2px rgba(0, 0, 0, 0.95),
+      0 3px 14px rgba(0, 0, 0, 0.75),
+      0 0 32px rgba(0, 0, 0, 0.45);
   }
 
-  .nk-hero-address h5 {
-    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+  .nk-hero-media h1 {
+    text-shadow:
+      0 2px 3px rgba(0, 0, 0, 0.9),
+      0 5px 20px rgba(0, 0, 0, 0.65),
+      0 0 40px rgba(0, 0, 0, 0.4);
   }
 
   .fs-72,
