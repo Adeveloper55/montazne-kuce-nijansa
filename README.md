@@ -22,6 +22,13 @@ Otvara se na **http://localhost:3000**
 - `site-assets/katalog-modeli.json` — 25 modela + specifikacije
 - `site-assets/INVENTAR.md` — pregled
 
+## Produkcija (Dokploy)
+
+Domen: **https://montaznekuce-nijansa.rs**  
+
+Uputstvo: vidi **[DEPLOY.md](DEPLOY.md)**  
+Docker: `Dockerfile` u root-u (Nginx, port 80).
+
 ## Izvor teme
 
 https://madebydesignesia.com/themes/homely/

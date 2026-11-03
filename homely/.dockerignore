@@ -1,0 +1,9 @@
+node_modules
+.git
+*.md
+Dockerfile
+docker-compose.yml
+.dockerignore
+package*.json
+**/_sr
+**/*.map

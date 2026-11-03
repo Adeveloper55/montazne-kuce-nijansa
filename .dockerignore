@@ -1,0 +1,8 @@
+site-assets
+.git
+*.py
+*.md
+!DEPLOY.md
+homely/node_modules
+homely/**/_sr
+homely/package*.json

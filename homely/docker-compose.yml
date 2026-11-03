@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: montazne-kuce-nijansa:latest
+    container_name: montazne-kuce-nijansa
+    ports:
+      - "80:80"
+    restart: unless-stopped
