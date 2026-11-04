@@ -157,85 +157,10 @@ a[href^="mailto:"]:hover {
   text-decoration: underline;
 }
 
-/* Call strip + floating Pozovi */
+/* Contact strip */
 .nk-call-strip {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.nk-call-float {
-  position: fixed;
-  right: 18px;
-  bottom: 22px;
-  z-index: 998;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 64px;
-  height: 52px;
-  padding: 0 1.1rem;
-  border-radius: 999px;
-  background: var(--nk-btn-bg, #0a2e1f);
-  color: #fff !important;
-  font-weight: 700;
-  font-size: 15px;
-  letter-spacing: 0.02em;
-  text-decoration: none !important;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
-}
-
-.nk-call-float:hover {
-  transform: translateY(-3px);
-  background: var(--nk-btn-bg-hover, #134032);
-  color: #fff !important;
-  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.4);
-}
-
-/* Keep scroll-up clear of floating Pozovi */
-#back-to-top {
-  right: 24px !important;
-  bottom: 90px !important;
-  z-index: 997 !important;
-}
-
-/* Keep copyright / Audax TIM clear of fixed Pozovi */
-footer.section-dark {
-  padding-bottom: 1.5rem;
-}
-
-footer .subfooter {
-  padding-bottom: 1.25rem;
-  position: relative;
-  z-index: 1;
-}
-
-@media (max-width: 767px) {
-  .nk-call-float {
-    right: 14px;
-    bottom: 16px;
-    left: 14px;
-    width: auto;
-    height: 50px;
-    border-radius: 12px;
-    font-size: 16px;
-  }
-
-  #back-to-top {
-    right: 18px !important;
-    bottom: 78px !important;
-  }
-
-  /* Full-width float sits over footer — lift content above it */
-  footer.section-dark {
-    padding-bottom: 5.5rem !important;
-  }
-
-  footer .subfooter {
-    padding-bottom: 0.75rem;
-    margin-bottom: 0;
-  }
 }
 
 /* ========== Hero: Tipski card over image on desktop ========== */
@@ -425,12 +350,6 @@ footer .subfooter {
   header.header-mobile #mainmenu li a.active {
     color: var(--nk-gold) !important;
     background: rgba(255, 255, 255, 0.04) !important;
-  }
-
-  /* Keep float call button below open menu */
-  header.header-mobile.menu-open ~ * .nk-call-float,
-  body:has(header.menu-open) .nk-call-float {
-    z-index: 900;
   }
 
   header.header-light #menu-btn,
