@@ -179,10 +179,11 @@ a[href^="mailto:"]:hover {
   font-weight: 600;
   padding: 0.75rem 1rem;
   border-radius: 10px;
-  background: rgba(31, 37, 34, 0.86);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+  background: rgba(30, 48, 38, 0.32);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.55);
 }
 
@@ -420,7 +421,7 @@ a[href^="mailto:"]:hover {
     max-width: 100%;
     font-weight: 600;
     padding: 0.7rem 0.85rem;
-    background: rgba(82, 122, 91, 0.96);
+    background: rgba(30, 48, 38, 0.32);
   }
 
   .fs-72,
@@ -629,6 +630,49 @@ a[href^="mailto:"]:hover {
 .nk-cat-card:hover .nk-cta {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Keep home catalog labels on a clear surface below each photo. */
+#section-gallery .nk-cat-card {
+  background: #fff;
+  color: #1c2a21 !important;
+  border: 1px solid #e4ebe5;
+  box-shadow: 0 16px 38px rgba(24, 42, 31, 0.12);
+}
+
+#section-gallery .nk-cat-card:hover {
+  box-shadow: 0 22px 46px rgba(24, 42, 31, 0.18);
+}
+
+#section-gallery .nk-cat-card .nk-overlay {
+  display: none;
+}
+
+#section-gallery .nk-cat-card .nk-body {
+  position: static;
+  padding: 1rem 1.2rem 1.15rem;
+  color: #1c2a21;
+  text-shadow: none;
+}
+
+#section-gallery .nk-cat-card .nk-eyebrow {
+  color: #66806b;
+  opacity: 1;
+}
+
+#section-gallery .nk-cat-card h3 {
+  color: #1c2a21;
+}
+
+#section-gallery .nk-cat-card .nk-cta {
+  color: #326b47;
+  opacity: 1;
+  transform: none;
+}
+
+#section-gallery .nk-cat-card:focus-visible {
+  outline: 3px solid #326b47;
+  outline-offset: 3px;
 }
 
 /* Model listing cards */
@@ -1010,6 +1054,15 @@ footer.nk-footer {
 #section-floorplan {
   background: #252c28 !important;
   color: #f5f6f4;
+}
+#section-projects {
+  background: #d8e4d5 !important;
+  color: #1c2a21 !important;
+}
+#section-projects > .container > .row:first-child .subtitle,
+#section-projects > .container > .row:first-child h2,
+#section-projects > .container > .row:first-child p {
+  color: #1c2a21 !important;
 }
 .nk-footer-grid {
   display: grid;
