@@ -1007,6 +1007,10 @@ footer.nk-footer {
   background-image: none !important;
   color: #f5f6f4 !important;
 }
+#section-floorplan {
+  background: #252c28 !important;
+  color: #f5f6f4;
+}
 .nk-footer-grid {
   display: grid;
   grid-template-columns: minmax(220px, 1.4fr) repeat(3, minmax(145px, 1fr));
