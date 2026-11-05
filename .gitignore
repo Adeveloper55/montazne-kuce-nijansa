@@ -6,3 +6,4 @@ Thumbs.db
 .idea/
 mirror_homely.py
 __pycache__/
+audit-results/

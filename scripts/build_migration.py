@@ -1,0 +1,147 @@
+"""Build and validate the old-to-new URL inventory from the retained site backup."""
+import html
+import json
+import re
+import shutil
+from pathlib import Path
+from urllib.parse import unquote, urlsplit
+
+ROOT = Path(__file__).resolve().parent.parent
+SITE = ROOT / 'homely'
+BACKUP = ROOT / 'site-assets'
+
+def main():
+    pages = {
+        'home': '/',
+        'montazne-kuce': '/montazne-kuce.html',
+        'montazne-kuce-do-50-m2': '/montazne-kuce-do-50.html',
+        'montazne-kuce-od-50-do-100-m2': '/montazne-kuce-50-100.html',
+        'montazne-kuce-preko-100-m2': '/montazne-kuce-preko-100.html',
+        'montazne-planinske-kuce-golija': '/montazne-kuce-golija.html',
+        'a-frame-kuce': '/a-frame-kuce.html',
+        'o-nama': '/about.html',
+        'faq': '/faq.html',
+        'kontakt': '/contact.html',
+        'zavrsni-radovi': '/projekti.html',
+        'realizovani-projekti': '/projekti.html',
+    }
+    for p in BACKUP.joinpath('pages').glob('montazna-kuca-tip-*.html'):
+        pages[p.stem] = '/model-tip-' + p.stem.removeprefix('montazna-kuca-tip-') + '.html'
+    for n in ('30', '40', '64'):
+        pages['montazna-planinska-kuca-golija-' + n] = '/model-tip-golija-' + n + '.html'
+    # Preserve the original site's misspelling as well as the corrected spelling.
+    pages['montazna-planinska-kuca-goliha-64'] = '/model-tip-golija-64.html'
+    missing = {p.stem for p in BACKUP.joinpath('pages').glob('*.html')} - set(pages)
+    assert not missing, f'Unmapped old pages: {missing}'
+
+    redirects = {}
+    for slug, target in pages.items():
+        for suffix in ('', '/', '.html'):
+            source = '/' + slug + suffix
+            if source != target:
+                redirects[source] = target
+
+    # Stop exposing unused theme demo homepages on the production domain.
+    demos = [p for p in SITE.glob('*.html') if p.stem.startswith(('homepage-', 'onepage-'))]
+    for p in demos:
+        for suffix in ('', '/', '.html'):
+            redirects['/' + p.stem + suffix] = '/'
+    redirects['/gallery.html'] = '/projekti.html'
+    redirects['/gallery/'] = '/projekti.html'
+    redirects['/gallery'] = '/projekti.html'
+    for source in ('/sitemap_index.xml', '/wp-sitemap.xml', '/page-sitemap.xml'):
+        redirects[source] = '/sitemap.xml'
+
+    # Current page URLs with a trailing slash must redirect before resolving relative assets.
+    for p in SITE.glob('*.html'):
+        if p.stem not in ('404', 'news', 'news-single'):
+            redirects.setdefault('/' + p.stem + '/', '/' + p.name)
+
+    existing = {p.name: p for p in SITE.joinpath('images').rglob('*') if p.is_file()}
+    originals = {p.name: p for p in BACKUP.joinpath('images').rglob('*') if p.is_file()}
+    urls = set()
+    inputs = [BACKUP / 'image-urls.txt', *BACKUP.joinpath('pages').glob('*.html')]
+    for p in inputs:
+        text = html.unescape(p.read_text(encoding='utf-8')).replace('\\/', '/')
+        urls.update(re.findall(r'https?://(?:www\.)?montaznekuce-nijansa\.rs/wp-content/uploads/[^\s"<>\\\x27]+?\.(?:jpe?g|png|webp|gif|svg)', text))
+    for url in sorted(urls):
+        source = unquote(urlsplit(url).path)
+        name = Path(source).name
+        base = re.sub(r'-\d+x\d+(?=\.[^.]+$)', '', name)
+        target = existing.get(name) or existing.get(base)
+        if not target:
+            original = originals.get(base) or originals.get(name)
+            assert original, f'Missing old image: {source}'
+            target = SITE / 'images' / 'legacy' / original.name
+            target.parent.mkdir(exist_ok=True)
+            shutil.copyfile(original, target)
+            existing[target.name] = target
+        redirects[source] = '/' + target.relative_to(SITE).as_posix()
+
+    # Replace the old WordPress sitemap with the current public page inventory.
+    public_pages = [p for p in SITE.glob('*.html') if p.stem not in ('404', 'gallery', 'news', 'news-single') and p not in demos]
+    sitemap_urls = ['https://montaznekuce-nijansa.rs/' + ('' if p.stem == 'index' else p.name) for p in sorted(public_pages)]
+    SITE.joinpath('sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join('  <url><loc>' + u + '</loc></url>\n' for u in sitemap_urls) + '</urlset>\n', encoding='utf-8')
+    SITE.joinpath('robots.txt').write_text('User-agent: *\nAllow: /\n\nSitemap: https://montaznekuce-nijansa.rs/sitemap.xml\n', encoding='utf-8')
+
+    # Ensure every redirect ends in an existing file and never redirects in a loop.
+    for source, target in redirects.items():
+        assert target not in redirects, f'Redirect chain: {source} -> {target}'
+        assert (SITE / (target.lstrip('/') or 'index.html')).is_file(), (source, target)
+
+    map_lines = '\n'.join(f'    {source} {target};' for source, target in sorted(redirects.items()))
+    config = '''# Legacy WordPress URLs and retired theme pages. Generated by scripts/build_migration.py.
+map_hash_bucket_size 256;
+map $uri $legacy_redirect {
+    default "";
+''' + map_lines + '''
+}
+
+server {
+    listen 80;
+    server_name _;
+    root /usr/share/nginx/html;
+    index index.html;
+    # Keep redirects relative so HTTPS stays HTTPS behind Dokploy's proxy.
+    absolute_redirect off;
+
+    if ($legacy_redirect != "") {
+        return 301 $legacy_redirect$is_args$args;
+    }
+
+    gzip on;
+    gzip_types text/plain text/css application/javascript application/json image/svg+xml;
+    gzip_min_length 1024;
+
+    location ~* \\.(?:css|js|jpg|jpeg|png|gif|webp|svg|ico|woff2?|ttf|eot)$ {
+        expires 30d;
+        add_header Cache-Control "public, max-age=2592000";
+        try_files $uri =404;
+    }
+
+    # These unused theme articles have no equivalent Nijansa content.
+    location ~ ^/news(?:-single)?(?:\\.html|/)?$ {
+        return 404;
+    }
+
+    location / {
+        try_files $uri $uri/ $uri.html =404;
+    }
+
+    add_header X-Content-Type-Options nosniff always;
+    add_header X-Frame-Options SAMEORIGIN always;
+    add_header Referrer-Policy strict-origin-when-cross-origin always;
+
+    # Unknown URLs must not silently return the homepage with HTTP 200.
+    error_page 404 /404.html;
+    location = /404.html {
+        internal;
+    }
+}
+'''
+    SITE.joinpath('nginx.conf').write_text(config, encoding='utf-8')
+    ROOT.joinpath('scripts/legacy-redirects.json').write_text(json.dumps(redirects, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    print(f'Built {len(redirects)} redirects for {len(pages)} legacy page names, demo pages and old media.')
+
+if __name__ == '__main__':
+    main()
