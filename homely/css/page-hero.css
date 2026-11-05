@@ -29,7 +29,7 @@ section.nk-page-hero {
   text-shadow: 0 1px 4px rgba(0, 0, 0, .65);
 }
 .nk-page-hero > .sw-overlay {
-  background: linear-gradient(180deg, transparent 25%, rgba(32, 57, 39, .75) 100%);
+  background: linear-gradient(180deg, transparent 25%, rgba(16, 20, 18, .68) 100%);
   opacity: 1;
   pointer-events: none;
 }
@@ -39,7 +39,7 @@ section.nk-page-hero {
     inset: auto;
     padding-top: 24px;
     padding-bottom: 24px;
-    background: #527a5b;
+    background: #303733;
     max-width: none;
   }
   .nk-page-hero > .sw-overlay { display: none; }

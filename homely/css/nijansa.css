@@ -179,7 +179,7 @@ a[href^="mailto:"]:hover {
   font-weight: 600;
   padding: 0.75rem 1rem;
   border-radius: 10px;
-  background: rgba(82, 122, 91, 0.96);
+  background: rgba(31, 37, 34, 0.86);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
@@ -978,4 +978,86 @@ header.header-light.smaller #logo img { max-height: 50px; }
 @media(max-width: 575px) {
  .nk-catalog-results > .row > [data-model] { width: 100%; }
  .nk-catalog-filters { padding: 20px; }
+}
+
+/* Keep hero imagery natural; use a neutral overlay and neutral button hover. */
+.nk-hero .sw-overlay {
+  background: rgba(18, 23, 20, 0.8) !important;
+}
+.nk-hero a.btn-main:hover,
+.nk-hero .btn-main:hover,
+.nk-page-hero a.btn-main:hover,
+.nk-page-hero .btn-main:hover {
+  background: #3b423e !important;
+  background-color: #3b423e !important;
+  border-color: #8e9a92 !important;
+  color: #fff !important;
+}
+.nk-hero a.btn-main:hover span,
+.nk-hero .btn-main:hover span,
+.nk-page-hero a.btn-main:hover span,
+.nk-page-hero .btn-main:hover span {
+  color: #fff !important;
+}
+
+/* Clear, compact footer navigation and contact details. */
+footer.nk-footer {
+  padding-top: 48px;
+  background: #252c28 !important;
+  background-image: none !important;
+  color: #f5f6f4 !important;
+}
+.nk-footer-grid {
+  display: grid;
+  grid-template-columns: minmax(220px, 1.4fr) repeat(3, minmax(145px, 1fr));
+  gap: 32px;
+  align-items: start;
+  padding-bottom: 38px;
+}
+.nk-footer-brand .nk-footer-logo { display: inline-block; margin-bottom: 14px; }
+.nk-footer-brand img { max-width: 174px; height: auto; filter: none; }
+.nk-footer-brand p,
+.nk-footer address {
+  max-width: 300px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-style: normal;
+  line-height: 1.7;
+}
+.nk-footer-title {
+  margin: 5px 0 14px !important;
+  color: #fff !important;
+  font-size: 16px !important;
+  font-weight: 600;
+}
+.nk-footer-links {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nk-footer-links li { margin: 0; padding: 0; }
+.nk-footer a {
+  color: rgba(255, 255, 255, 0.82) !important;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.nk-footer a:hover,
+.nk-footer a:focus-visible { color: #d8b36a !important; }
+.nk-footer-contact a { display: block; margin-bottom: 10px; overflow-wrap: anywhere; }
+.nk-footer .subfooter {
+  margin-top: 0;
+  padding: 17px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.12);
+  color: rgba(255, 255, 255, 0.68);
+}
+.nk-footer .subfooter a { color: #d8b36a !important; }
+@media (max-width: 991px) {
+  .nk-footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+}
+@media (max-width: 575px) {
+  footer.nk-footer { padding-top: 38px; }
+  .nk-footer-grid { grid-template-columns: 1fr; gap: 24px; padding-bottom: 30px; }
 }
