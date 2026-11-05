@@ -10,10 +10,10 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
     <link href="css/plugins.css" rel="stylesheet" type="text/css">
     <link href="css/swiper.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css?v=20261105-font-filters-1" rel="stylesheet" type="text/css">
     <link href="css/coloring.css" rel="stylesheet" type="text/css">
     <link href="css/colors/scheme-01.css" id="colors" rel="stylesheet" type="text/css">
-    <link href="css/nijansa.css" rel="stylesheet" type="text/css">
+    <link href="css/nijansa.css?v=20261106-header-stats-1" rel="stylesheet" type="text/css">
 
     <!-- Google tag (gtag.js) for Google Ads call conversions -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18290116215"></script>
@@ -23,6 +23,7 @@
         gtag('js', new Date());
         gtag('config', 'AW-18290116215', { send_page_view: false });
     </script>
+    <link href="css/page-hero.css?v=20261105-2" rel="stylesheet">
 </head>
 
 <body>
@@ -70,8 +71,8 @@
         <a href="#" id="back-to-top"></a>
         <div id="de-loader"></div>
 
-        <section class="jarallax text-light relative overflow-hidden mt-80 mt-sm-50">
-            <img src="images/background/1.webp" class="jarallax-img" alt="">
+        <section class="nk-page-hero text-light relative overflow-hidden mt-80 mt-sm-50">
+            <img src="images/background/1.webp" class="nk-page-hero-image" alt="">
             <div class="container relative z-2">
                 <div class="row g-4 justify-content-between align-items-center">
                     <div class="col-md-7">
@@ -89,7 +90,7 @@
             <div class="sw-overlay op-6"></div>
         </section>
 
-        <section class="bg-color">
+        <section class="bg-color nk-catalog-section">
             <div class="container">
                 <div class="row g-4 justify-content-center mb-4">
                     <div class="col-lg-8 text-center">
@@ -98,13 +99,32 @@
                         <p class="">Kompaktni tipski modeli idealni za vikendice i manja domaćinstva.</p>
                     </div>
                 </div>
-                <div class="row g-4">
+                <div class="nk-catalog-layout" data-catalog-filter>
+                    <aside class="nk-catalog-sidebar" aria-label="Filteri modela">
+                        <form class="nk-catalog-filters">
+                            <div class="nk-filter-title">Pronađite svoj dom</div>
+                            <p>Izaberite šta vam odgovara.</p>
+                            <fieldset><legend>Broj soba</legend><div class="nk-filter-choices"><label class="nk-filter-choice"><input type="checkbox" name="rooms" value="2"><span>2</span></label>
+<label class="nk-filter-choice"><input type="checkbox" name="rooms" value="3"><span>3</span></label></div></fieldset><fieldset><legend>Ukupan broj prostorija</legend><div class="nk-filter-choices"><label class="nk-filter-choice"><input type="checkbox" name="spaces" value="5"><span>5</span></label>
+<label class="nk-filter-choice"><input type="checkbox" name="spaces" value="6"><span>6</span></label>
+<label class="nk-filter-choice"><input type="checkbox" name="spaces" value="7"><span>7</span></label></div></fieldset>
+                            <fieldset>
+                                <legend>Površina do <output data-area-output>51 m²</output></legend>
+                                <input type="range" name="area" min="31" max="51" value="51" step="1" aria-label="Maksimalna bruto površina">
+                                <div class="nk-filter-range-labels"><span>31 m²</span><span>51 m²</span></div>
+                            </fieldset>
+                            <button type="reset" class="nk-filter-reset">Poništi filtere</button>
+                        </form>
+                    </aside>
+                    <div class="nk-catalog-results">
+                        <p class="nk-filter-count" role="status" aria-live="polite" aria-atomic="true">Prikazano 7 od 7 modela</p>
+                        <div class="row g-4">
                     
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6" data-model data-area="31.03" data-rooms="2" data-spaces="6">
                         <a href="model-tip-27.html" class="nk-model-card">
                             <div class="nk-media">
                                 <span class="nk-badge">Tip 27</span>
-                                <img src="images/katalog/eksterijer/montazna-kuca-tip-ivanjica-27.jpg" alt="Montažna kuća Tip 27">
+                                <img src="images/katalog/photoreal/montazna-kuca-tip-ivanjica-27.webp" alt="Fotorealistična vizualizacija montažne kuće Tip 27">
                             </div>
                             <div class="nk-body">
                                 <h3>Montažna kuća Tip 27</h3>
@@ -127,11 +147,11 @@
                         </a>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6" data-model data-area="34.93" data-rooms="3" data-spaces="7">
                         <a href="model-tip-30.html" class="nk-model-card">
                             <div class="nk-media">
                                 <span class="nk-badge">Tip 30</span>
-                                <img src="images/katalog/eksterijer/montazna-kuca-tip-ivanjica-30.jpg" alt="Montažna kuća Tip 30">
+                                <img src="images/katalog/photoreal/montazna-kuca-tip-ivanjica-30.webp" alt="Fotorealistična vizualizacija montažne kuće Tip 30">
                             </div>
                             <div class="nk-body">
                                 <h3>Montažna kuća Tip 30</h3>
@@ -154,11 +174,11 @@
                         </a>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6" data-model data-area="39.74" data-rooms="3" data-spaces="7">
                         <a href="model-tip-35.html" class="nk-model-card">
                             <div class="nk-media">
                                 <span class="nk-badge">Tip 35</span>
-                                <img src="images/katalog/eksterijer/montazna-kuca-tip-ivanjica-35.jpg" alt="Montažna kuća Tip 35">
+                                <img src="images/katalog/photoreal/montazna-kuca-tip-ivanjica-35.webp" alt="Fotorealistična vizualizacija montažne kuće Tip 35">
                             </div>
                             <div class="nk-body">
                                 <h3>Montažna kuća Tip 35</h3>
@@ -181,11 +201,11 @@
                         </a>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6" data-model data-area="40.66" data-rooms="2" data-spaces="5">
                         <a href="model-tip-36.html" class="nk-model-card">
                             <div class="nk-media">
                                 <span class="nk-badge">Tip 36</span>
-                                <img src="images/katalog/eksterijer/montazna-kuca-tip-ivanjica-36.jpg" alt="Montažna kuća Tip 36">
+                                <img src="images/katalog/photoreal/montazna-kuca-tip-ivanjica-36.webp" alt="Fotorealistična vizualizacija montažne kuće Tip 36">
                             </div>
                             <div class="nk-body">
                                 <h3>Montažna kuća Tip 36</h3>
@@ -208,11 +228,11 @@
                         </a>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6" data-model data-area="44.24" data-rooms="3" data-spaces="6">
                         <a href="model-tip-40.html" class="nk-model-card">
                             <div class="nk-media">
                                 <span class="nk-badge">Tip 40</span>
-                                <img src="images/katalog/eksterijer/montazna-kuca-tip-ivanjica-40.jpg" alt="Montažna kuća Tip 40">
+                                <img src="images/katalog/photoreal/montazna-kuca-tip-ivanjica-40.webp" alt="Fotorealistična vizualizacija montažne kuće Tip 40">
                             </div>
                             <div class="nk-body">
                                 <h3>Montažna kuća Tip 40</h3>
@@ -235,11 +255,11 @@
                         </a>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6" data-model data-area="48.38" data-rooms="3" data-spaces="7">
                         <a href="model-tip-44a.html" class="nk-model-card">
                             <div class="nk-media">
                                 <span class="nk-badge">Tip 44a</span>
-                                <img src="images/katalog/eksterijer/montazna-kuca-tip-ivanjica-44a.jpg" alt="Montažna kuća Tip 44a">
+                                <img src="images/katalog/photoreal/montazna-kuca-tip-ivanjica-44a.webp" alt="Fotorealistična vizualizacija montažne kuće Tip 44a">
                             </div>
                             <div class="nk-body">
                                 <h3>Montažna kuća Tip 44a</h3>
@@ -262,11 +282,11 @@
                         </a>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6" data-model data-area="50.38" data-rooms="3" data-spaces="7">
                         <a href="model-tip-44b.html" class="nk-model-card">
                             <div class="nk-media">
                                 <span class="nk-badge">Tip 44b</span>
-                                <img src="images/katalog/eksterijer/montazna-kuca-tip-ivanjica-44b.jpg" alt="Montažna kuća Tip 44b">
+                                <img src="images/katalog/photoreal/montazna-kuca-tip-ivanjica-44b.webp" alt="Fotorealistična vizualizacija montažne kuće Tip 44b">
                             </div>
                             <div class="nk-body">
                                 <h3>Montažna kuća Tip 44b</h3>
@@ -289,6 +309,13 @@
                         </a>
                     </div>
 
+                </div>
+                        <div class="nk-filter-empty" hidden>
+                            <h3>Nema modela za ovaj izbor</h3>
+                            <p>Promenite broj soba, prostorija ili površinu.</p>
+                            <button type="button" class="nk-filter-reset" data-reset-filters>Prikaži sve modele</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="row mt-5">
                     <div class="col-12 text-center">
@@ -356,5 +383,6 @@
 
 
     <script src="js/google-ads-call-conversion.js"></script>
+    <script src="js/catalog-filters.js"></script>
 </body>
 </html>
