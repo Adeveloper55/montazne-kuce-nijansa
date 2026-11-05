@@ -11,6 +11,11 @@ section.nk-page-hero {
   max-width: none;
   object-fit: contain;
 }
+.nk-page-hero-projects > .nk-page-hero-image {
+  height: clamp(320px, 32vw, 460px);
+  object-fit: cover;
+  object-position: center 55%;
+}
 .nk-page-hero > .container {
   position: absolute !important;
   inset: auto 0 10%;
@@ -34,6 +39,9 @@ section.nk-page-hero {
   pointer-events: none;
 }
 @media (max-width: 767px) {
+  .nk-page-hero-projects > .nk-page-hero-image {
+    height: 220px;
+  }
   .nk-page-hero > .container {
     position: relative !important;
     inset: auto;
