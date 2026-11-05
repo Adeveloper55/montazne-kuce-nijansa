@@ -68,7 +68,10 @@ def main():
         path='/' if p.name=='index.html' else '/'+p.name
         status, headers, body, final=fetch(path+QUERY)
         assert status==200 and 'text/html' in headers.get('Content-Type',''), (path,status)
-        assert hashlib.sha256(body).digest()==hashlib.sha256(p.read_bytes()).digest(), f'{path}: deployed content differs from checkout'
+        # Git normalizes Windows CRLF to LF in the Linux deployment checkout.
+        actual = body.replace(b'\r\n', b'\n')
+        expected = p.read_bytes().replace(b'\r\n', b'\n')
+        assert hashlib.sha256(actual).digest()==hashlib.sha256(expected).digest(), f'{path}: deployed content differs from checkout'
         parsed=Links(); parsed.feed(body.decode('utf-8'))
         ids[path]=parsed.ids
         assert '(+1) 234-5678' not in ''.join(parsed.visible), path
