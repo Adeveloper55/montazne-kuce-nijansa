@@ -1074,6 +1074,22 @@ footer.nk-footer {
 #section-projects > .container > .row:first-child p {
   color: #1c2a21 !important;
 }
+.nk-projects-gallery {
+  background: #f4f6f3 !important;
+  color: #17231b !important;
+}
+.nk-projects-gallery .subtitle {
+  color: #48634f !important;
+  font-weight: 600;
+}
+.nk-projects-gallery h2 {
+  color: #17231b !important;
+  font-weight: 600;
+}
+.nk-projects-gallery p {
+  color: #424d45 !important;
+  font-weight: 500;
+}
 .nk-footer-grid {
   display: grid;
   grid-template-columns: minmax(220px, 1.4fr) repeat(3, minmax(145px, 1fr));
