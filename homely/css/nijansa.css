@@ -1144,3 +1144,10 @@ footer.nk-footer {
   footer.nk-footer { padding-top: 38px; }
   .nk-footer-grid { grid-template-columns: 1fr; gap: 24px; padding-bottom: 30px; }
 }
+
+/* Footer navigation must retain its content height on mobile. */
+footer.nk-footer .nk-footer-nav {
+  height: auto;
+  min-width: 0;
+}
+footer.nk-footer .nk-footer-grid > * { min-width: 0; }
